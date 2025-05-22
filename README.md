@@ -5,7 +5,7 @@
 	    <a name="stars"><img src="https://img.shields.io/github/stars/bobbyiliev/101-linux-commands-ebook?style=for-the-badge"></a>
 	    <a name="forks"><img src="https://img.shields.io/github/forks/bobbyiliev/101-linux-commands-ebook?logoColor=green&style=for-the-badge"></a>
 	    <a name="contributions"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=green&style-for-the-badge"></a>
-      <a name="ebook" href="https://sugatoray.github.io/101-linux-commands-ebook" target="_blank"><img src="https://img.shields.io/static/v1?label=eBook&message=Read%20Online&color=orange&logoColor=green&style=for-the-badge&logo=github"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=yellow&style=for-the-badge"></a>
+      <a name="ebook" href="https://sugatoray.github.io/101-linux-commands-ebook" target="_blank"><img src="https://img.shields.io/static/v1?label=eBook&message=Read%20Online&color=orange&logoColor=green&style=for-the-badge&logo=github"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=yellow&style-for-the-badge"></a>
 	    <a name="madeWith"><img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?style=for-the-badge"></a>
 	    <a name="license"><img src="https://img.shields.io/github/license/bobbyiliev/101-linux-commands-ebook?style=for-the-badge"></a>
     </p>
@@ -19,7 +19,7 @@ Bu ochiq manbali eBook bo‘lib, unda har bir Linux foydalanuvchisi bilishi kera
 
 Agar ushbu buyruqlarni sinab ko‘rish uchun Linux virtual mashinasiga ehtiyoj sezsangiz, quyidagi havoladan foydalanib [DigitalOcean’da $200 bepul kredit](https://m.do.co/c/2a9bba940f39) olishingiz mumkin!
 
-## Linuxga kirish eBook
+## Linuxga kir怖 eBook
 
 Agar yangi boshlovchilar uchun keng qamrovli qo‘llanma izlayotgan bo‘lsangiz, ushbu eBookni ko‘rib chiqing: [Introduction to Linux eBook](https://leanpub.com/introduction-to-linux)
 
@@ -99,7 +99,7 @@ Kitobning onlayn nusxasi :zap:🌐 quyidagi havolada mavjud [**bu yerda** 📙](
 
 **Fayl Tizimi Buyruqlari**
 
-| Buyruq  | Opsiyalar          | Tavsif                                  |
+| Buyruq  | Options            | Tavsif                                  |
 |---------|--------------------|-----------------------------------------|
 | [`cd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/002-the-cd-command.md)     | `-`                | Oxirgi papkaga o‘tish                   |
 |         | `~`                | Foydalanuvchi uy papkasiga o‘tish      |
@@ -128,8 +128,8 @@ Kitobning onlayn nusxasi :zap:🌐 quyidagi havolada mavjud [**bu yerda** 📙](
 
 **Fayl Manipulyatsiyasi**
 
-| Buyruq  | Opsiyalar                                    | Tavsif                                    |
-|---------|----------------------------------------------|-------------------------------------------|
+| Buyruq  | Options                                    | Tavsif                                    |
+|---------|--------------------------------------------|-------------------------------------------|
 | [`cat`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/003-the-cat-tac-command.md)    | `fayl`                                     | Fayl mazmunini ko‘rsatish                 |
 | [`tac`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/003-the-cat-tac-command.md)    | `fayl`                                     | Fayl mazmunini teskari tartibda ko‘rsatish |
 | [`sort`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/059-the-sort-command.md)   | `fayl`                                     | Faylni saralab ko‘rsatish                 |
@@ -149,18 +149,18 @@ Kitobning onlayn nusxasi :zap:🌐 quyidagi havolada mavjud [**bu yerda** 📙](
 
 **Arxivlash**
 
-| Buyruq          | Opsiyalar                          | Tavsif                                              |
-|-----------------|------------------------------------|-----------------------------------------------------|
-| [`tar`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/063-the-tar-command.md)            | `cfv archiv.tar fayl1 fayl2`       | Arxiv yaratish yoki yangilash                       |
-|                 | `tfv archiv.tar`                   | Arxiv mazmunini ko‘rsatish                          |
-|                 | `xf archiv.tar [-C ~/extracted]`   | Arxivni ochish (siqilgan bo‘lsa, dekompressiya qilish) |
-|                 | `cfvj archiv.tar.bz2 fayl`         | Bzip2 bilan siqilgan arxiv yaratish                 |
-|                 | `cfvz archiv.tar.gz fayl`          | Gzip bilan siqilgan arxiv yaratish                  |
-|                 | `cfa archiv.tar.[komp] fayl`       | Siqilgan arxiv yaratish (nomi bo‘yicha avto-tur)   |
-| [`bzip2`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/069-the-bzip2-command.md) | `fayl1 fayl2`                      | Fayllarni alohida siqish                            |
-|                 | `-d fayl1 fayl2`                   | Fayllarni dekompressiya qilish                      |
-| [`gzip`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/015-the-gzip-command.md)  | `fayl1 fayl2`                      | Fayllarni alohida siqish                            |
-|                 | `-d fayl1 fayl2`                   | Fayllarni dekompressiya qilish                      |
+| Buyruq          | Options                          | Tavsif                                              |
+|-----------------|----------------------------------|-----------------------------------------------------|
+| [`tar`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/063-the-tar-command.md)            | `cfv archiv.tar fayl1 fayl2`     | Arxiv yaratish yoki yangilash                       |
+|                 | `tfv archiv.tar`                 | Arxiv mazmunini ko‘rsatish                          |
+|                 | `xf archiv.tar [-C ~/extracted]` | Arxivni ochish (siqilgan bo‘lsa, dekompressiya qilish) |
+|                 | `cfvj archiv.tar.bz2 fayl`       | Bzip2 bilan siqilgan arxiv yaratish                 |
+|                 | `cfvz archiv.tar.gz fayl`        | Gzip bilan siqilgan arxiv yaratish                  |
+|                 | `cfa archiv.tar.[komp] fayl`     | Siqilgan arxiv yaratish (nomi bo‘yicha avto-tur)   |
+| [`bzip2`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/069-the-bzip2-command.md) | `fayl1 fayl2`                    | Fayllarni alohida siqish                            |
+|                 | `-d fayl1 fayl2`                 | Fayllarni dekompressiya qilish                      |
+| [`gzip`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/015-the-gzip-command.md)  | `fayl1 fayl2`                    | Fayllarni alohida siqish                            |
+|                 | `-d fayl1 fayl2`                 | Fayllarni dekompressiya qilish                      |
 
 ---
 
@@ -170,37 +170,37 @@ Kitobning onlayn nusxasi :zap:🌐 quyidagi havolada mavjud [**bu yerda** 📙](
 
 Jismoniy bo‘limlarni yaratish **talab qilinmaydi**! Siz to‘g‘ridan-to‘g‘ri PVlar yaratishingiz mumkin!
 
-| Buyruq       | Opsiyalar                     | Tavsif                                      |
-|--------------|-------------------------------|---------------------------------------------|
-| `fdisk`      | `-l`                          | Jismoniy disklar va bo‘limlarni ro‘yxatlash |
-|              | `/dev/sdb`<br>`n`             | Yangi bo‘lim yaratish                       |
-|              | `/dev/sdb`<br>`t`<br>`8e`     | Bo‘lim turini *Linux LVM* ga o‘zgartirish   |
-| `mkfs.xfs`   | `/dev/myVG/myVol`             | LVni XFS formatida formatlash               |
-| `mkfs.ext4`  | `-f /dev/myVG/myVol`          | LVni EXT4 formatida formatlash (qayta yozish) |
-| `blkid`      | `/dev/myVG/myVol`             | UUID va formatlash ma’lumotlarini ko‘rsatish |
-| `mount`      |                               | Joriy ulangan fayl tizimlarini ko‘rsatish   |
+| Buyruq       | Options                     | Tavsif                                      |
+|--------------|-----------------------------|---------------------------------------------|
+| `fdisk`      | `-l`                        | Jismoniy disklar va bo‘limlarni ro‘yxatlash |
+|              | `/dev/sdb`<br>`n`           | Yangi bo‘lim yaratish                       |
+|              | `/dev/sdb`<br>`t`<br>`8e`   | Bo‘lim turini *Linux LVM* ga o‘zgartirish   |
+| `mkfs.xfs`   | `/dev/myVG/myVol`           | LVni XFS formatida formatlash               |
+| `mkfs.ext4`  | `-f /dev/myVG/myVol`        | LVni EXT4 formatida formatlash (qayta yozish) |
+| `blkid`      | `/dev/myVG/myVol`           | UUID va formatlash ma’lumotlarini ko‘rsatish |
+| `mount`      |                             | Joriy ulangan fayl tizimlarini ko‘rsatish   |
 |              | `-t ext4 /dev/myVG/myVol /mountpoint` | LVni /mountpoint ga ulash            |
-|              | `-a`                          | /etc/fstab da sozlanganidek ulash           |
-| `umount`     |                               | Fayl tizimini ajratish                      |
-|              | `/dev/myVG/myVol`             | LVni /mountpoint dan ajratish               |
-|              | `/mountpoint`                 | LVni /mountpoint dan ajratish               |
-| [`df`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/010-the-df-command.md) |                -              | Disk foydalanishini ko‘rsatish              |
-| `xfs_growfs` | `/dev/myVG/myVol`             | XFS fayl tizimi hajmini o‘zgartirish        |
-| `resize2fs`  | `/dev/myVG/myVol`             | EXT3/4 fayl tizimi hajmini o‘zgartirish     |
+|              | `-a`                        | /etc/fstab da sozlanganidek ulash           |
+| `umount`     |                             | Fayl tizimini ajratish                      |
+|              | `/dev/myVG/myVol`           | LVni /mountpoint dan ajratish               |
+|              | `/mountpoint`               | LVni /mountpoint dan ajratish               |
+| [`df`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/010-the-df-command.md) |                -            | Disk foydalanishini ko‘rsatish              |
+| `xfs_growfs` | `/dev/myVG/myVol`           | XFS fayl tizimi hajmini o‘zgartirish        |
+| `resize2fs`  | `/dev/myVG/myVol`           | EXT3/4 fayl tizimi hajmini o‘zgartirish     |
 
 ---
 
 **Boshqalar**
 
-| Buyruq     | Opsiyalar         | Tavsif                                    |
-|------------|-------------------|-------------------------------------------|
-| `<buyruq>` | `--help`          | Joriy buyruq uchun yordam (standartlashtirilmagan) |
-|            | `-h`              |                                           |
-|            | `-?`              |                                           |
-| [`man`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/024-the-man-command.md)       | `<buyruq>`       | Buyruqning qo‘llanma sahifasi             |
-|            | `-k kalit so‘z`   | Kalit so‘z bo‘yicha buyruq qidirish (yoki `apropos`) |
-| `alias`    |                   | Taxalluslarni ko‘rsatish                  |
-|            | `name='buyruq'`   | Taxallus yaratish                         |
+| Buyruq     | Options         | Tavsif                                    |
+|------------|-----------------|-------------------------------------------|
+| `<buyruq>` | `--help`        | Joriy buyruq uchun yordam (standartlashtirilmagan) |
+|            | `-h`            |                                           |
+|            | `-?`            |                                           |
+| [`man`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/024-the-man-command.md)       | `<buyruq>`     | Buyruqning qo‘llanma sahifasi             |
+|            | `-k kalit so‘z` | Kalit so‘z bo‘yicha buyruq qidirish (yoki `apropos`) |
+| `alias`    |                 | Taxalluslarni ko‘rsatish                  |
+|            | `name='buyruq'` | Taxallus yaratish                         |
 
 ---
 
@@ -244,13 +244,13 @@ Bash o‘zi regexni bilmaydi. `grep`, `sed`, `awk` kabi dasturlardan foydalaning
 
 **Grep**
 
-| Buyruq | Opsiyalar           | Tavsif                  |
-|--------|---------------------|-------------------------|
-| [`grep`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/107-the-grep-command.md)  | `naqsh fayl`        | Kengaytirilgan Regex    |
-|        | `-E naqsh fayl`     | Kengaytirilgan Regex    |
-|        | `-v naqsh fayl`     | Teskari moslik          |
-|        | `-w naqsh fayl`     | So‘z bo‘yicha moslik    |
-|        | `-i naqsh fayl`     | Katta-kichik harflarga e’tiborsiz |
+| Buyruq | Options           | Tavsif                  |
+|--------|-------------------|-------------------------|
+| [`grep`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/107-the-grep-command.md)  | `naqsh fayl`      | Kengaytirilgan Regex    |
+|        | `-E naqsh fayl`   | Kengaytirilgan Regex    |
+|        | `-v naqsh fayl`   | Teskari moslik          |
+|        | `-w naqsh fayl`   | So‘z bo‘yicha moslik    |
+|        | `-i naqsh fayl`   | Katta-kichik harflarga e’tiborsiz |
 
 ## Oqim yo‘naltirish
 
@@ -379,28 +379,28 @@ Parol:
 
 **Buyruqlar**
 
-| Buyruq    | Parametrlar                                    | Tavsif                                    |
-|-----------|-----------------------------------------------|-------------------------------------------|
-| `id`      | `foydalanuvchi`                               | Foydalanuvchi ID va guruhlarini ko‘rsatish |
-| [`who`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/017-the-who-command.md)      |                                               | Tizimga kirgan foydalanuvchilarni ko‘rsatish |
-| [`last`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/048-the-last-command.md)     |                                               | Oxirgi kirishlarni ko‘rsatish             |
-| `lastb`   |                                               | Oxirgi muvaffaqiyatsiz kirishlarni ko‘rsatish |
-| [`sudo`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/051-the-sudo-command.md)     | `-u foydalanuvchi buyruq`                     | Buyruqni foydalanuvchi huquqlari bilan bajarish (standart root) |
-|           | `-i` yoki `su -`                              | Root huquqlari bilan shell                |
-| [`su`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/044-the-su-command.md)       |                                               | Root sifatida shell (kirish shellsiz)     |
-|           | `-`                                           | Root sifatida shell (kirish shell)        |
-|           | `- foydalanuvchi`                             | Foydalanuvchi sifatida shell              |
+| Buyruq    | Options                                    | Tavsif                                    |
+|-----------|--------------------------------------------|-------------------------------------------|
+| `id`      | `foydalanuvchi`                           | Foydalanuvchi ID va guruhlarini ko‘rsatish |
+| [`who`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/017-the-who-command.md)      |                                            | Tizimga kirgan foydalanuvchilarni ko‘rsatish |
+| [`last`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/048-the-last-command.md)     |                                            | Oxirgi kirishlarni ko‘rsatish             |
+| `lastb`   |                                            | Oxirgi muvaffaqiyatsiz kirishlarni ko‘rsatish |
+| [`sudo`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/051-the-sudo-command.md)     | `-u foydalanuvchi buyruq`                 | Buyruqni foydalanuvchi huquqlari bilan bajarish (standart root) |
+|           | `-i` yoki `su -`                          | Root huquqlari bilan shell                |
+| [`su`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/044-the-su-command.md)       |                                            | Root sifatida shell (kirish shellsiz)     |
+|           | `-`                                       | Root sifatida shell (kirish shell)        |
+|           | `- foydalanuvchi`                         | Foydalanuvchi sifatida shell              |
 | [`useradd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/080-the-useradd-command.md)  | `-u 2101 -g asosiyguruh -c izoh foydalanuvchi` | Foydalanuvchi yaratish ( `-g` siz yangi guruh yaratiladi) |
-| [`usermod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/082-the-usermod-command.md)  | `-G guruh1,guruh2`                            | Ikkinchi darajali guruhlarni belgilash (qayta yozish) |
-|           | `-ag guruh,guruh2`                            | Ikkinchi darajali guruhlarni qo‘shish     |
-|           | `-l foydalanuvchi`                            | Foydalanuvchi nomini o‘zgartirish         |
-|           | `-L`                                          | Hisobni qulflash                          |
-|           | `-U`                                          | Hisobni qulfdan chiqarish                 |
-|           | `-s shell_yo‘li`                              | Shellni o‘zgartirish                      |
-| [`userdel`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/081-the-userdel-command.md)  | `-r foydalanuvchi`                            | Foydalanuvchini uy va pochta fayllari bilan o‘chirish |
-| [`passwd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/025-the-passwd-command.md)   | `foydalanuvchi`                               | Parolni o‘zgartirish (interaktiv)         |
-| `groupadd` | `guruhnomi`                                  | Guruh yaratish (`-g` bilan GID o‘rnatish mumkin) |
-| `groupdel` | `guruhnomi`                                  | Guruhni o‘chirish                         |
+| [`usermod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/082-the-usermod-command.md)  | `-G guruh1,guruh2`                        | Ikkinchi darajali guruhlarni belgilash (qayta yozish) |
+|           | `-ag guruh,guruh2`                        | Ikkinchi darajali guruhlarni qo‘shish     |
+|           | `-l foydalanuvchi`                        | Foydalanuvchi nomini o‘zgartirish         |
+|           | `-L`                                      | Hisobni qulflash                          |
+|           | `-U`                                      | Hisobni qulfdan chiqarish                 |
+|           | `-s shell_yo‘li`                          | Shellni o‘zgartirish                      |
+| [`userdel`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/081-the-userdel-command.md)  | `-r foydalanuvchi`                        | Foydalanuvchini uy va pochta fayllari bilan o‘chirish |
+| [`passwd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/025-the-passwd-command.md)   | `foydalanuvchi`                           | Parolni o‘zgartirish (interaktiv)         |
+| `groupadd` | `guruhnomi`                               | Guruh yaratish (`-g` bilan GID o‘rnatish mumkin) |
+| `groupdel` | `guruhnomi`                               | Guruhni o‘chirish                         |
 
 # Fayl Tizimi Ruxsatnomalari
 
@@ -434,18 +434,18 @@ Kengaytirilgan ruxsatnomalar `ls -l` da **x** ni almashtiradi. Agar **x** o‘rn
 
 **Buyruqlar**
 
-| Buyruq   | Opsiyalar                    | Tavsif                                      |
-|----------|-----------------------------|---------------------------------------------|
-| [`chmod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/106-the-chmod-command.md)   | `-R [uog] papkanomi`       | Ruxsatnomalarni rekursiv ravishda o‘rnatish |
-|          | `+[suog] faylnomi`         | Ikkilik bayroqlar yordamida ruxsat qo‘shish |
-|          | `-[suog] faylnomi`         | Ikkilik bayroqlar yordamida ruxsatni olib tashlash |
-|          | `u+x faylnomi`             | *Foydalanuvchi* uchun *bajarish* ruxsatini qo‘shish |
-|          | `g+wx faylnomi`            | *Guruh* uchun *yozish* va *bajarish* ruxsatlarini qo‘shish |
-|          | `o-r faylnomi`             | *Boshqalar* uchun *o‘qish* ruxsatini olib tashlash |
+| Buyruq   | Options                    | Tavsif                                      |
+|----------|----------------------------|---------------------------------------------|
+| [`chmod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/106-the-chmod-command.md)   | `-R [uog] papkanomi`      | Ruxsatnomalarni rekursiv ravishda o‘rnatish |
+|          | `+[suog] faylnomi`        | Ikkilik bayroqlar yordamida ruxsat qo‘shish |
+|          | `-[suog] faylnomi`        | Ikkilik bayroqlar yordamida ruxsatni olib tashlash |
+|          | `u+x faylnomi`            | *Foydalanuvchi* uchun *bajarish* ruxsatini qo‘shish |
+|          | `g+wx faylnomi`           | *Guruh* uchun *yozish* va *bajarish* ruxsatlarini qo‘shish |
+|          | `o-r faylnomi`            | *Boshqalar* uchun *o‘qish* ruxsatini olib tashlash |
 | [`chown`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/101-the-chown-command.md)   | `-R foydalanuvchi:guruh faylnomi` | Egani (*Foydalanuvchi* va *Guruh*) rekursiv ravishda o‘zgartirish |
-|          | `foydalanuvchi faylnomi`   | Egani (*Foydalanuvchi*) o‘zgartirish        |
-|          | `:guruh faylnomi`          | Egani (*Guruh*) o‘zgartirish                |
-| `chgroup`| `guruh faylnomi`           | Egani (*Guruh*) o‘zgartirish                |
+|          | `foydalanuvchi faylnomi`  | Egani (*Foydalanuvchi*) o‘zgartirish        |
+|          | `:guruh faylnomi`         | Egani (*Guruh*) o‘zgartirish                |
+| `chgroup`| `guruh faylnomi`          | Egani (*Guruh*) o‘zgartirish                |
 
 # SSH
 
@@ -456,7 +456,7 @@ O‘zgarishlarni qo‘llash uchun SSH xizmatini qayta yuklang: `systemctl reload
 
 DenyUsers, AllowUsers, DenyGroups, AllowGroups bir-birini qayta yozadi va yuqoridagi tartibda qo‘llaniladi.
 
-| Sozlama           | Opsiya             | Tavsif                                   |
+| Sozlama           | Options            | Tavsif                                   |
 |-------------------|--------------------|------------------------------------------|
 | `PermitRootLogin` | `no`               | Root uchun SSH orqali kirishni taqiqlash |
 |                   | `yes`              | Root uchun SSH orqali kirishga ruxsat    |
@@ -476,6 +476,7 @@ Cronjoblar crontab fayllarida sozlanadi. Ushbu fayllarni to‘g‘ridan-to‘g�
 - `/etc/crontab` tizim bo‘yicha crontab
 
 Fayllar formati (foydalanuvchiga xos crontablarda *foydalanuvchi-nomi* ustuni bo‘lmaydi):
+
 
 
 
@@ -827,4 +828,5 @@ Agar ro‘yxatda yoqtirgan mavzungiz bo‘lmasa, yangi mavzu qo‘shishingiz mum
 - [110-the-make-command.md](ebook/en/content/110-the-make-command.md)
 - [111-the-basename-command.md](ebook/en/content/111-the-basename-command.md)
 - [112-the-banner-command.md](ebook/en/content/112-the-banner-command.md)
-- [113-the-alias-command.md](
+- [113-the-alias-command.md]
+
