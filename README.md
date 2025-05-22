@@ -4,717 +4,727 @@
     <p>
 	    <a name="stars"><img src="https://img.shields.io/github/stars/bobbyiliev/101-linux-commands-ebook?style=for-the-badge"></a>
 	    <a name="forks"><img src="https://img.shields.io/github/forks/bobbyiliev/101-linux-commands-ebook?logoColor=green&style=for-the-badge"></a>
-	    <a name="contributions"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=green&style-for-the-badge"></a>
-      <a name="ebook" href="https://sugatoray.github.io/101-linux-commands-ebook" target="_blank"><img src="https://img.shields.io/static/v1?label=eBook&message=Read%20Online&color=orange&logoColor=green&style=for-the-badge&logo=github"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=yellow&style-for-the-badge"></a>
+	    <a name="contributions"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=green&style=for-the-badge"></a>
+      <a name="ebook" href="https://sugatoray.github.io/101-linux-commands-ebook" target="_blank"><img src="https://img.shields.io/static/v1?label=eBook&message=Read%20Online&color=orange&logoColor=green&style=for-the-badge&logo=github"><img src="https://img.shields.io/github/contributors/bobbyiliev/101-linux-commands-ebook?logoColor=yellow&style=for-the-badge"></a>
 	    <a name="madeWith"><img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?style=for-the-badge"></a>
 	    <a name="license"><img src="https://img.shields.io/github/license/bobbyiliev/101-linux-commands-ebook?style=for-the-badge"></a>
     </p>
 </div>
 
-## 💻 101 Linux buyruqlari – Ochiq manbali eBook
+## 💻 ++101 Linux commands Open-source eBook
 
-Bu ochiq manbali eBook bo‘lib, unda har bir Linux foydalanuvchisi bilishi kerak bo‘lgan 101 ta buyruq keltirilgan. Siz DevOps/SysOps muhandisi, dasturchi yoki oddiy Linux ishqibozi bo‘lsangiz ham, terminaldan foydalanishga to‘g‘ri keladi. Ushbu kitobda keltirilgan buyruqlar tizimni boshqarish, fayllar bilan ishlash, tarmoq sozlamalari va boshqa ko‘plab vazifalarni bajarishda yordam beradi.
+This is an open-source eBook with 101 Linux commands that everyone should know. No matter if you are a DevOps/SysOps engineer, developer, or just a Linux enthusiast, you will most likely have to use the terminal at some point in your career.
 
-**Eslatma**: Repozitoriyga yulduzcha qo‘yishni unutmang ⭐
+**Make sure to star the repository** ⭐
 
-Agar ushbu buyruqlarni sinab ko‘rish uchun Linux virtual mashinasiga ehtiyoj sezsangiz, quyidagi havoladan foydalanib [DigitalOcean’da $200 bepul kredit](https://m.do.co/c/2a9bba940f39) olishingiz mumkin!
+If you need a Linux virtual machine to test these commands on, use the following referral link to get a [free $200 Credit For DigitalOcean](https://m.do.co/c/2a9bba940f39)!
 
-## Linuxga kir怖 eBook
+## Introduction to Linux eBook
 
-Agar yangi boshlovchilar uchun keng qamrovli qo‘llanma izlayotgan bo‘lsangiz, ushbu eBookni ko‘rib chiqing: [Introduction to Linux eBook](https://leanpub.com/introduction-to-linux)
+If you are looking for a comprehensive guide for beginners, check out this eBook: [Introduction to Linux eBook](https://leanpub.com/introduction-to-linux)
 
-## 📙 Onlayn eBook
+## 📙 Online eBook
 
-Kitobning onlayn nusxasi :zap:🌐 quyidagi havolada mavjud [**bu yerda** 📙](https://sugatoray.github.io/101-linux-commands-ebook).
+An online copy :zap:🌐 of this ebook is available [**here** 📙](https://sugatoray.github.io/101-linux-commands-ebook).
 
-## 🔽 Yuklab olish havolalari
+## 🔽 Download links
 
-- [Qorong‘i rejim](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/export/101-linux-commands-ebook-dark.pdf)
-- [Yorug‘ rejim](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/export/101-linux-commands-ebook-light.pdf)
+- [Dark mode](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/export/101-linux-commands-ebook-dark.pdf)
+
+- [Light mode](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/export/101-linux-commands-ebook-light.pdf)
 
 ---
 
-# Mundarija <!-- omit in toc -->
+# Content <!-- omit in toc -->
 
-- [Asoslar](#asoslar)
-  - [Fayl Tizimi Ierarxiyasi Standarti (FHS)](#fayl-tizimi-ierarxiyasi-standarti-fhs)
-  - [Buyruqlar](#buyruqlar)
-- [Disk va Fayl Tizimini Boshqarish](#disk-va-fayl-tizimini-boshqarish)
-  - [Umumiy Disk Manipulyatsiyasi (LVMsiz)](#umumiy-disk-manipulyatsiyasi-lvmsiz)
-  - [Globallar (Joker Belgilar)](#globallar-joker-belgilar)
+- [Basics](#basics)
+  - [File Hierarchy Standard (FHS)](#file-hierarchy-standard-fhs)
+  - [Commands](#commands)
+- [Disk and File System Management](#disk-and-file-system-management)
+  - [General Disk Manipulation (non-LVM)](#general-disk-manipulation-non-lvm)
+  - [Globs (Wildcards)](#globs-wildcards)
   - [Regex](#regex)
-  - [Oqim yo‘naltirish](#oqim-yo‘naltirish)
-- [Matn O‘quvchilar va Muharrirlar](#matn-o‘quvchilar-va-muharrirlar)
+  - [Stream redirection](#stream-redirection)
+- [Text Readers & Editors](#text-readers--editors)
   - [Less](#less)
   - [VI](#vi)
-- [Foydalanuvchi va Guruh Boshqaruvi](#foydalanuvchi-va-guruh-boshqaruvi)
-- [Fayl Tizimi Ruxsatnomalari](#fayl-tizimi-ruxsatnomalari)
+- [User and Group Management](#user-and-group-management)
+- [File System Permissions](#file-system-permissions)
 - [SSH](#ssh)
 - [Cronjobs](#cronjobs)
-- [Paket Boshqaruvi](#paket-boshqaruvi)
+- [Package Management](#package-management)
   - [RPM](#rpm)
   - [YUM](#yum)
-- [📃 Kategoriyalar bo‘yicha buyruqlar ro‘yxati:](#kategoriyalar-bo‘yicha-buyruqlar-ro‘yxati)
-    - [Papkalar bo‘yicha navigatsiya](#papkalar-bo‘yicha-navigatsiya)
-    - [Fayl buyruqlari](#fayl-buyruqlari)
-    - [Fayl va Papka Manipulyatsiyasi](#fayl-va-papka-manipulyatsiyasi)
-    - [Paket arxivlash va siqish vositalari](#paket-arxivlash-va-siqish-vositalari)
-    - [Tizim buyruqlari](#tizim-buyruqlari)
-    - [Tarmoq buyruqlari](#tarmoq-buyruqlari)
-    - [Paket boshqaruvi](#paket-boshqaruvi-1)
-    - [Foydalanuvchi ma’lumotlari buyruqlari](#foydalanuvchi-ma‘lumotlari-buyruqlari)
-    - [Sessiya buyruqlari](#sessiya-buyruqlari)
-    - [Yordam olish](#yordam-olish)
-    - [Ilovalar](#ilovalar)
-- [📃 Boblar bo‘yicha buyruqlar ro‘yxati:](#boblar-bo‘yicha-buyruqlar-ro‘yxati)
-- [🔗Havolalar](#havolalar)
-- [📖Boshqa eBooklar](#boshqa-ebooklar)
-- [🤲Hissa qo‘shish](#hissa-qo‘shish)
+- [📃 List of commands by category:](#-list-of-commands-by-category)
+    - [Directory Navigation](#directory-navigation)
+    - [File Commands](#file-commands)
+    - [File and Directory Manipulation](#file-and-directory-manipulation)
+    - [Package archive and compression tools](#package-archive-and-compression-tools)
+    - [System commands](#system-commands)
+    - [Networking Commands](#networking-commands)
+    - [Package Management](#package-management-1)
+    - [User Information commands](#user-information-commands)
+    - [Session commands](#session-commands)
+    - [Getting Help](#getting-help)
+    - [Applications](#applications)
+- [📃 List of commands by chapter:](#-list-of-commands-by-chapter)
+- [🔗Links](#links)
+- [📖Other eBooks](#other-ebooks)
+- [🤲Contributing](#contributing)
+---
+
+# Basics
+
+## File Hierarchy Standard (FHS)
+
+| Path     | Content                             |
+| -------- | ----------------------------------- |
+| `/bin`   | Binaries (User)                     |
+| `/boot`  | Static boot loader files            |
+| `/etc`   | Host specific configs               |
+| `/lib`   | Shared libraries and kernel modules |
+| `/sbin`  | Binaries (System/root)              |
+| `/var`   | Varying files (e.g. Logs)           |
+| `/usr`   | 3rd party software                  |
+| `/proc`  | Pseudo file system                  |
+| `/sys`   | Pseudo file system                  |
+| `/mnt`   | Mountpoint for internal drives      |
+| `/media` | Mountpoint for external drives      |
+| `/home`  | User homes                          |
+| `/run`   | PID files of running processes      |
 
 ---
 
-# Asoslar
+## Commands
 
-## Fayl Tizimi Ierarxiyasi Standarti (FHS)
+**File System Commands**
 
-| Yo‘l      | Tarkib                              |
-|-----------|-------------------------------------|
-| `/bin`    | Foydalanuvchi uchun binary fayllar  |
-| `/boot`   | Yuklash fayllari                   |
-| `/etc`    | Tizim sozlamalari                  |
-| `/lib`    | Umumiy kutubxonalar va yadro modullari |
-| `/sbin`   | Tizim administratori uchun buyruqlar |
-| `/var`    | O‘zgaruvchan fayllar (masalan, loglar) |
-| `/usr`    | Uchinchi tomon dasturlari          |
-| `/proc`   | Virtual fayl tizimi                |
-| `/sys`    | Virtual fayl tizimi                |
-| `/mnt`    | Ichki disklar uchun ulash nuqtasi  |
-| `/media`  | Tashqi disklar uchun ulash nuqtasi |
-| `/home`   | Foydalanuvchilarning shaxsiy papkalari |
-| `/run`    | Ishlayotgan jarayonlarning PID fayllari |
-
----
-
-## Buyruqlar
-
-**Fayl Tizimi Buyruqlari**
-
-| Buyruq  | Options            | Tavsif                                  |
-|---------|--------------------|-----------------------------------------|
-| [`cd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/002-the-cd-command.md)     | `-`                | Oxirgi papkaga o‘tish                   |
-|         | `~`                | Foydalanuvchi uy papkasiga o‘tish      |
-|         | `~username`        | Belgilangan foydalanuvchi uy papkasiga o‘tish |
-| [`pwd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/006-the-pwd-command.md)    |                    | Joriy papkani ko‘rsatish                |
-| [`ls`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/001-the-ls-command.md)     |                    | Papka tarkibini ko‘rsatish              |
-|         | `-l`               | Ro‘yxatni batafsil ko‘rsatish           |
-|         | `-a`               | Yashirin fayllarni ko‘rsatish (`-A` `.` va `..`siz) |
-|         | `-r`               | Teskari tartibda ko‘rsatish             |
-|         | `-R`               | Rekursiv ko‘rsatish                    |
-|         | `-S`               | Hajm bo‘yicha saralash                 |
-|         | `-t`               | O‘zgartirilgan sana bo‘yicha saralash  |
-| [`mkdir`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/014-the-mkdir-command.md) | `-p`             | Ota-onalar bilan papka yaratish         |
-| [`cp`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/031-the-cp-command.md)     | `-r`               | Papkani nusxalash                      |
-| [`rmdir`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/103-the-rmdir-command.md) | `-p`             | Bo‘sh papkani va uning ota-onalarini o‘chirish |
-| [`rm`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/040-the-rm-command.md)     | `-rf`              | Papkani rekursiv ravishda o‘chirish, `-f` tasdiqlamasdan |
-| [`mv`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/032-the-mv-command.md)     |                    | Fayl yoki papkani ko‘chirish           |
-| [`find`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/102-the-find-command.md)   | `-iname pattern`   | Fayl/papkani katta-kichik harflarga e’tiborsiz qidirish |
-|         | `-mmin n`          | Oxirgi n daqiqada o‘zgartirilgan fayllar |
-|         | `-mtime n`         | Oxirgi n kunda o‘zgartirilgan fayllar  |
-|         | `-regex pattern`   | Naqshga mos keladigan yo‘l             |
-|         | `-size n[kMG]`     | Fayl hajmi bo‘yicha qidirish (`-n` kichik; `+n` katta) |
-|         | `! searchparams`   | Qidiruvni teskari qilish               |
+| Command | Options            | Description                                       |
+| ------- | ---------------- | ------------------------------------------------- |
+| [`cd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/002-the-cd-command.md)    | `-`              | Navigate to last dir                              |
+|         | `~`              | Navigate to home                                  |
+|         | `~username`      | Navigate to home of specified user                |
+| [`pwd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/006-the-pwd-command.md)   |                  | Print working dir                                 |
+| [`ls`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/001-the-ls-command.md)    |                  | Print dir content                                 |
+|         | `-l`             | Format as list                                    |
+|         | `-a`             | Show hidden items (`-A` without `.` and `..`)     |
+|         | `-r`             | Invert order                                      |
+|         | `-R`             | Recurse                                           |
+|         | `-S`             | Sort by size                                      |
+|         | `-t`             | Sort by date modified                             |
+| [`mkdir`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/014-the-mkdir-command.md) | `-p`             | Create dir with parents                           |
+| [`cp`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/031-the-cp-command.md)    | `-r`             | Copy dir                                          |
+| [`rmdir`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/103-the-rmdir-command.md) | `-p`             | Remove dir and empty parents                      |
+| [`rm`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/040-the-rm-command.md)    | `-rf`            | Remove dir recursively, `-f` without confirmation |
+| [`mv`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/032-the-mv-command.md)    |                  | Move recursively                                  |
+| [`find`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/102-the-find-command.md)  | `-iname pattern` | Search dir/file case-insensitive                  |
+|         | `-mmin n`        | Last modified n minutes ago                       |
+|         | `-mtime n`       | Last modified n days ago                          |
+|         | `-regex pattern` | Path matches pattern                              |
+|         | `-size n[kMG]`   | By file size (`-n` less than; `+n` greater than)  |
+|         | `! searchparams` | Invert search                                     |
 
 ---
 
-**Fayl Manipulyatsiyasi**
+**File Manipulation**
 
-| Buyruq  | Options                                    | Tavsif                                    |
-|---------|--------------------------------------------|-------------------------------------------|
-| [`cat`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/003-the-cat-tac-command.md)    | `fayl`                                     | Fayl mazmunini ko‘rsatish                 |
-| [`tac`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/003-the-cat-tac-command.md)    | `fayl`                                     | Fayl mazmunini teskari tartibda ko‘rsatish |
-| [`sort`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/059-the-sort-command.md)   | `fayl`                                     | Faylni saralab ko‘rsatish                 |
-|         | `fayl -r -u`                               | Teskari tartibda, takrorlanmasdan saralash |
-| [`head`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/004-the-head-command.md)   | `-n10 fayl`                                | Faylning dastlabki 10 qatorini ko‘rsatish |
-| [`tail`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/005-the-tail-command.md)   | `-f fayl`                                  | Yangi qatorlarni avtomatik kuzatish       |
-| [`cut`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/098-the-cut-command.md)    | `-f -4,7-10,12,15- fayl`                   | Tab bilan ajratilgan maydonlarni tanlash   |
-|         | `-c -4,7-10,12,15- fayl`                   | Belgilangan belgilarni tanlash            |
-|         | `-f 2,4 -d, --output-delimiter=$'\t' fayl` | Ajratuvchini o‘zgartirish (chiqishda tab) |
-| [`uniq`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/074-the-uniq-command.md)   | `fayl`                                     | Ketma-ket bir xil qatorlarni yashirish    |
-|         | `fayl -c`                                  | Ketma-ket bir xil qatorlar sonini ko‘rsatish |
-|         | `fayl -u`                                  | Faqat takrorlanmagan qatorlarni ko‘rsatish |
-| `file`  | `fayl`                                     | Fayl turini aniqlash                      |
-| `wc`    | `fayl`                                     | Qatorlar, so‘zlar va belgilarni sanash    |
-
----
-
-**Arxivlash**
-
-| Buyruq          | Options                          | Tavsif                                              |
-|-----------------|----------------------------------|-----------------------------------------------------|
-| [`tar`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/063-the-tar-command.md)            | `cfv archiv.tar fayl1 fayl2`     | Arxiv yaratish yoki yangilash                       |
-|                 | `tfv archiv.tar`                 | Arxiv mazmunini ko‘rsatish                          |
-|                 | `xf archiv.tar [-C ~/extracted]` | Arxivni ochish (siqilgan bo‘lsa, dekompressiya qilish) |
-|                 | `cfvj archiv.tar.bz2 fayl`       | Bzip2 bilan siqilgan arxiv yaratish                 |
-|                 | `cfvz archiv.tar.gz fayl`        | Gzip bilan siqilgan arxiv yaratish                  |
-|                 | `cfa archiv.tar.[komp] fayl`     | Siqilgan arxiv yaratish (nomi bo‘yicha avto-tur)   |
-| [`bzip2`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/069-the-bzip2-command.md) | `fayl1 fayl2`                    | Fayllarni alohida siqish                            |
-|                 | `-d fayl1 fayl2`                 | Fayllarni dekompressiya qilish                      |
-| [`gzip`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/015-the-gzip-command.md)  | `fayl1 fayl2`                    | Fayllarni alohida siqish                            |
-|                 | `-d fayl1 fayl2`                 | Fayllarni dekompressiya qilish                      |
+| Command | Options                                      | Description                                |
+| ------- | ------------------------------------------ | ------------------------------------------ |
+| [`cat`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/003-the-cat-tac-command.md)   | `file`                                     | Print content                              |
+| [`tac`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/003-the-cat-tac-command.md)   | `file`                                     | Print content inverted                     |
+| [`sort`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/059-the-sort-command.md)  | `file`                                     | Print sorted                               |
+|         | `file -r -u`                               | Print sorted descending without dublicates |
+| [`head`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/004-the-head-command.md)  | `-n10 file`                            | Print lines 5-10                           |
+| [`tail`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/005-the-tail-command.md)  | `-f file`                                  | Print new lines automatically              |
+| [`cut`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/098-the-cut-command.md)   | `-f -4,7-10,12,15- file`                   | Print selected fields (tab delimited)      |
+|         | `-c -4,7-10,12,15- file`                   | Print selected characters positions        |
+|         | `-f 2,4 -d, --output-delimiter=$'\t' file` | Change delimiter (but use tab for output)  |
+| [`uniq`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/074-the-uniq-command.md)  | `file`                                     | Hide consecutive identical lines           |
+|         | `file -c`                                  | Show consecutive identical line count      |
+|         | `file -u`                                  | Hide consecutive identical lines           |
+| `file`  | `file`                                     | Get file type                              |
+| `wc`    | `file`                                     | Count Lines, Words, Chars (Bytes)          |
 
 ---
 
-# Disk va Fayl Tizimini Boshqarish
+**Archiving**
 
-## Umumiy Disk Manipulyatsiyasi (LVMsiz)
-
-Jismoniy bo‘limlarni yaratish **talab qilinmaydi**! Siz to‘g‘ridan-to‘g‘ri PVlar yaratishingiz mumkin!
-
-| Buyruq       | Options                     | Tavsif                                      |
-|--------------|-----------------------------|---------------------------------------------|
-| `fdisk`      | `-l`                        | Jismoniy disklar va bo‘limlarni ro‘yxatlash |
-|              | `/dev/sdb`<br>`n`           | Yangi bo‘lim yaratish                       |
-|              | `/dev/sdb`<br>`t`<br>`8e`   | Bo‘lim turini *Linux LVM* ga o‘zgartirish   |
-| `mkfs.xfs`   | `/dev/myVG/myVol`           | LVni XFS formatida formatlash               |
-| `mkfs.ext4`  | `-f /dev/myVG/myVol`        | LVni EXT4 formatida formatlash (qayta yozish) |
-| `blkid`      | `/dev/myVG/myVol`           | UUID va formatlash ma’lumotlarini ko‘rsatish |
-| `mount`      |                             | Joriy ulangan fayl tizimlarini ko‘rsatish   |
-|              | `-t ext4 /dev/myVG/myVol /mountpoint` | LVni /mountpoint ga ulash            |
-|              | `-a`                        | /etc/fstab da sozlanganidek ulash           |
-| `umount`     |                             | Fayl tizimini ajratish                      |
-|              | `/dev/myVG/myVol`           | LVni /mountpoint dan ajratish               |
-|              | `/mountpoint`               | LVni /mountpoint dan ajratish               |
-| [`df`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/010-the-df-command.md) |                -            | Disk foydalanishini ko‘rsatish              |
-| `xfs_growfs` | `/dev/myVG/myVol`           | XFS fayl tizimi hajmini o‘zgartirish        |
-| `resize2fs`  | `/dev/myVG/myVol`           | EXT3/4 fayl tizimi hajmini o‘zgartirish     |
+| Command          | Options                          | Description                                              |
+| ---------------- | -------------------------------- | -------------------------------------------------------- |
+| [`tar`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/063-the-tar-command.md)            | `cfv archiv.tar file1 file2`     | Create archive / add or overwrite content  |
+|                  | `tfv archiv.tar`                 | Show content                                             |
+|                  | `xf archiv.tar [-C ~/extracted]` | Extract (and decompress) archive (to ~ / extracted)      |
+|                  | `cfvj archiv.tar.bz2 file`       | Create bzip2 compressed archive                          |
+|                  | `cfvz archiv.tar.gz file`        | Create gzip compressed archive                           |
+|                  | `cfa archiv.tar.[komp] file`     | create compressed archive (auto type based on name)      |
+| [`bzip2`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/069-the-bzip2-command.md) | `file1 file2`                    | Dateien (einzeln) komprimieren                           |
+|                  | `-d file1 file2`                 | Compress files (one at a time)                           |
+| [`gzip`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/015-the-gzip-command.md) | `file1 file2`                    | Dateien (einzeln) komprimieren                           |
+|                  | `-d file1 file2`                 | Decompress files                                   |
 
 ---
 
-**Boshqalar**
+# Disk and File System Management
 
-| Buyruq     | Options         | Tavsif                                    |
-|------------|-----------------|-------------------------------------------|
-| `<buyruq>` | `--help`        | Joriy buyruq uchun yordam (standartlashtirilmagan) |
-|            | `-h`            |                                           |
-|            | `-?`            |                                           |
-| [`man`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/024-the-man-command.md)       | `<buyruq>`     | Buyruqning qo‘llanma sahifasi             |
-|            | `-k kalit so‘z` | Kalit so‘z bo‘yicha buyruq qidirish (yoki `apropos`) |
-| `alias`    |                 | Taxalluslarni ko‘rsatish                  |
-|            | `name='buyruq'` | Taxallus yaratish                         |
+## General Disk Manipulation (non-LVM)
+
+Creating physical partitions is **not required**! You can create PVs directly!
+
+| Command        | Options                     | Description                          |
+| ---------------|---------------------------- | ------------------------------------ |
+| `fdisk`        |  `-l`                       | List physical disks and partitions   |
+|         	 |  `/dev/sdb`<br>`n`          | Create new partition                 |
+|        	 |  `/dev/sdb`<br>`t`<br>`8e`  | Change partition type to *Linux LVM* |
+| `mkfs.xfs`     |  `/dev/myVG/myVol`          | Format LV with XFS                   |
+| `mkfs.ext4`    |  `-f /dev/myVG/myVol`       | Format LV with EXT4 (overwrite)      |
+| `blkid`        |  `/dev/myVG/myVol`          | Show UUID and formatting of volume   |
+| `mount`        |                             | Show current mounted file systems    |
+| 		 |  `-t ext4 /dev/myVG/myVol /mountpoint` | Mount LV to /mountpoint    |
+| 		 |  `-a`                       | Mount as configured in /etc/fstab    |
+| `umount`       |                             | Unmount a file system
+|       	 |  `/dev/myVG/myVol`          | Unmount LV from /mountpoint          |
+|        	 |  `/mountpoint`              | Unmount LV from /mountpoint          |
+| [`df`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/010-the-df-command.md)|                -    | Show disk usage                      |
+| `xfs_growfs`   | `/dev/myVG/myVol`           | Resize xfs filesystem                |
+| `resize2fs`    | ` /dev/myVG/myVol`          | Resize ext3/4 filesystem             |
 
 ---
 
-## Globallar (Joker Belgilar)
+**Other**
 
-Yashirin elementlar oldidagi nuqta `.` globallar naqshlarida e’tiborga olinmaydi!
+| Command     | Options         | Description                                |
+| ----------- | --------------- | ------------------------------------------ |
+| `<command>` | `--help`        | Help of current command (not standardized) |
+|             | `-h`            |                                            |
+|             | `-?`            |                                            |
+| [`man`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/024-the-man-command.md)       | `<command>`     | Manual page of command                     |
+|             | `-k keyword`    | Search command by keyword (oder `apropos`) |
+| `alias`     |                 | Show aliases                               |
+|             | `name='befehl'` | Create alias                               |
 
-| Belgi     | Tavsif                          |
-|-----------|---------------------------------|
-| `?`       | Har qanday yagona belgi         |
-| `*`       | Har qanday belgilar             |
-| `[ac-e]`  | Ro‘yxatdagi 1 ta belgi          |
-| `[!ac-e]` | Ro‘yxatda bo‘lmagan 1 ta belgi  |
+---
+
+## Globs (Wildcards)
+
+The dot `.` in front of hidden items is ignored by glob patterns!
+
+| Character | Description             |
+| --------- | ----------------------- |
+| `?`       | Any single character    |
+| `*`       | Any characters          |
+| `[ac-e]`  | 1 character in enum     |
+| `[!ac-e]` | 1 character not in enum |
 
 ## Regex
 
-Bash o‘zi regexni bilmaydi. `grep`, `sed`, `awk` kabi dasturlardan foydalaning.
+Bash itself does not know regex. Use programs like `grep`, `sed`, `awk`.
 
-**Boshqaruv belgilari**
+**Control characters**
 
-| Belgi          | Tavsif                          |
-|----------------|---------------------------------|
-| `.`            | Har qanday yagona belgi         |
-| `[ac-e]`       | Ro‘yxatdagi 1 ta belgi          |
-| `[^ac-e]`      | Ro‘yxatda bo‘lmagan 1 ta belgi  |
-| `^`            | Satr boshlanishi                |
-| `$`            | Satr tugashi                    |
-| `\d`           | Raqam                           |
-| `\D`           | Raqam emas                      |
-| `\s`           | Bo‘shliq                        |
-| `\S`           | Bo‘shliq emas                   |
-| `\<`           | So‘z boshlanishi                |
-| `\>`           | So‘z tugashi                    |
-| `naqsh?`       | 0 yoki 1 marta takrorlanadi     |
-| `naqsh*`       | 0 yoki undan ko‘p marta         |
-| `naqsh+`       | 1 yoki undan ko‘p marta         |
-| `naqsh{x}`     | Aynan x marta                   |
-| `naqsh{x,}`    | x dan ko‘p marta                |
-| `naqsh{x,y}`   | x dan y gacha                   |
-| `naqsh{,y}`    | 0 dan y gacha                   |
+| Character      | Description             |
+| -------------- | ----------------------- |
+| `.`            | Any single character    |
+| `[ac-e]`       | 1 character in enum     |
+| `[^ac-e]`      | 1 character not in enum |
+| `^`            | Start of string         |
+| `$`            | End of string           |
+| `\d`           | Digit                   |
+| `\D`           | Not a digit             |
+| `\s`           | Whitespace              |
+| `\S`           | Not a Whitespace        |
+| `\<`           | Start of word           |
+| `\>`           | End of word             |
+| `pattern?`     | Quantifier 0 or 1       |
+| `pattern*`     | Quantifier 0..n         |
+| `pattern+`     | Quantifier 1..n         |
+| `pattern{x}`   | Quantifier exactly x    |
+| `pattern{x,}`  | Quantifier x..n         |
+| `pattern{x,y}` | Quantifier x..y         |
+| `pattern{,y}`  | Quantifier 0..y         |
 
 **Grep**
 
-| Buyruq | Options           | Tavsif                  |
-|--------|-------------------|-------------------------|
-| [`grep`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/107-the-grep-command.md)  | `naqsh fayl`      | Kengaytirilgan Regex    |
-|        | `-E naqsh fayl`   | Kengaytirilgan Regex    |
-|        | `-v naqsh fayl`   | Teskari moslik          |
-|        | `-w naqsh fayl`   | So‘z bo‘yicha moslik    |
-|        | `-i naqsh fayl`   | Katta-kichik harflarga e’tiborsiz |
+| Command | Options             | Description    |
+| ------- | ----------------- | -------------- |
+| [`grep`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/107-the-grep-command.md)  | `pattern file`    | Extended Regex |
+|         | `-E pattern file` | Extended Regex |
+|         | `-v pattern file` | Invert match   |
+|         | `-w pattern file` | Word match     |
+|         | `-i pattern file` | Ignore case    |
 
-## Oqim yo‘naltirish
+## Stream redirection
 
-- `>` qayta yozish
-- `>>` qo‘shish
+- `>` overwrite
+- `>>` append
 
-| Belgi                | Tavsif                          |
-|----------------------|---------------------------------|
-| `> fayl` yoki `1> fayl` | STDOUT ni faylga yozish         |
-| `< fayl`             | Faylni STDIN ga yo‘naltirish    |
-| `2> fayl`            | STDERR ni faylga yozish         |
-| `2>&1`               | STDERR ni STDOUT bilan bir joyga |
-| `> fayl 2>&1`        | STDOUT va STDERR ni faylga      |
+| Character             | Description                     |
+| --------------------- | ------------------------------- |
+| `> file` or `1> file` | STDOUT to file                  |
+| `< file`              | Datei to STDIN                  |
+| `2> file`             | STDERR to file                  |
+| `2>&1`                | STDERR to same target as STDOUT |
+| `> file 2>&1`         | STDOUT and STDERR to file       |
 
-# Matn O‘quvchilar va Muharrirlar
+# Text Readers & Editors
 
 ## Less
 
-| Buyruq             | Tavsif                          |
-|--------------------|---------------------------------|
-| `q`                | Chiqish                         |
-| `R`                | Mazmunni yangilash              |
-| `F`                | Avtomatik aylantirish           |
-| `g raqam`          | Qatorga o‘tish                  |
-| `m kichikHarf`     | Qatorni belgilash               |
-| `' kichikHarf`     | Belgilangan qatorga o‘tish      |
-| `/naqsh`           | Oldinga qidirish                |
-| `?naqsh`           | Orqaga qidirish                 |
-| `n`                | Keyingi qidiruv natijasi        |
-| `N`                | Oldingi qidiruv natijasi        |
-| `ESC u`            | Qidiruv belgilanishini olib tashlash |
+| Command             | Description                     |
+| ------------------- | ------------------------------- |
+| `q`                 | Quit                            |
+| `R`                 | Refresh content                 |
+| `F`                 | Auto scroll                     |
+| `g number`          | Go to line                      |
+| `m lowercaseLetter` | Mark line                       |
+| `' lowercaseLetter` | Go to mark                      |
+| `/pattern`          | Search forward                  |
+| `?pattern`          | Search backward                 |
+| `n`                 | Next search result              |
+| `N`                 | Last search result              |
+| `ESC u`             | Remove highlighting from search |
 
 ## VI
 
 [`VI/VIM`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/100-the-vim-command.md)
-**Tahrirlash**
+**Editing**
 
-Tahrirlash rejimidan chiqish uchun `ESC` ni bosing.
+To leave editing mode press `ESC`.
 
-| Buyruq   | Tavsif                          |
-|----------|---------------------------------|
-| `i`      | Kursor oldidan yozish           |
-| `a`      | Kursor orqasidan yozish         |
-| `A`      | Qator oxiridan yozish           |
-| `o`      | Quyida yangi qator              |
-| `O`      | Yuqorida yangi qator            |
-| `u`      | Bekor qilish                    |
-| `.`      | Oxirgi buyruqni takrorlash      |
-| `yy`     | Qatorni nusxalash               |
-| `5yy`    | 5 qatorni nusxalash             |
-| `p`      | Quyida joylashtirish            |
-| `P`      | Yuqorida joylashtirish          |
-| `x`      | Belgini o‘chirish               |
-| `5x`     | 5 belgini o‘chirish             |
-| `dd`     | Qatorni o‘chirish               |
-| `5dd`    | 5 qatorni o‘chirish             |
-| `:10,20d`| 10-20 qatorlarni o‘chirish      |
-| `d0`     | Qator boshigacha o‘chirish      |
-| `d$`     | Qator oxirigacha o‘chirish      |
+| Command   | Description           |
+| --------- | --------------------- |
+| `i`       | insert before cursor  |
+| `a`       | insert after cursor   |
+| `A`       | insert at end of line |
+| `o`       | new line below        |
+| `O`       | new line above        |
+| `u`       | undo                  |
+| `.`       | repeat last command   |
+| `yy`      | copy line             |
+| `5yy`     | copy 5 lines          |
+| `p`       | paste below           |
+| `P`       | paste above           |
+| `x`       | delete character      |
+| `5x`      | delete 5 characters   |
+| `dd`      | delete line           |
+| `5dd`     | delete 5 lines        |
+| `:10,20d` | delete lines 10-20    |
+| `d0`      | delete to line begin  |
+| `d$`      | delete to line end    |
 
-**Navigatsiya**
+**Navigation**
 
-Odatdagidek `strelka tugmalari`, `home`, `end`, `pg up`, `pg dn` bilan harakatlaning.
+Navigate as usual with `arrow keys`, `home`, `end`, `pg up`, `pg dn`.
 
-| Buyruq | Tavsif                          |
-|--------|---------------------------------|
-| `5G`   | 5-qatorga o‘tish                |
-| `H`    | Ekranning yuqorisiga            |
-| `M`    | Ekranning o‘rtasiga             |
-| `L`    | Ekranning pastiga               |
-| `5w`   | 5 so‘z oldinga                  |
-| `5b`   | 5 so‘z orqaga                   |
+| Command | Description            |
+| ------- | ---------------------- |
+| `5G`    | go to line 5           |
+| `H`     | go to top of screen    |
+| `M`     | go to middle of screen |
+| `L`     | go to end of screen    |
+| `5w`    | move over 7 words      |
+| `5b`    | move back 5 words      |
 
-**Boshqalar**
+**Other**
 
-| Buyruq     | Tavsif                          |
-|------------|---------------------------------|
-| `/foo`     | Oldinga qidirish                |
-| `?foo`     | Orqaga qidirish                 |
-| `n`        | Qidiruvni takrorlash            |
-| `:w`       | Saqlash                         |
-| `:q`       | Yopish                          |
-| `:wq`      | Saqlash va yopish               |
-| `:q!`      | Saqlamasdan yopish              |
-| `:!buyruq` | Bash buyruqlarini ishga tushirish |
-| `:r foo`   | Foo faylini joriy faylga o‘qish |
+| Command     | Description                  |
+| ----------- | ---------------------------- |
+| `/foo`      | search forward               |
+| `?foo`      | search backwards             |
+| `n`         | repeat search                |
+| `:w`        | save                         |
+| `:q`        | close                        |
+| `:wq`       | save and close               |
+| `:q!`       | close without saving         |
+| `:!command` | run bash command             |
+| `:r foo`    | read file foo into this file |
 
-# Foydalanuvchi va Guruh Boshqaruvi
+# User and Group Management
 
 **UID**
 
-| UID   | Tur             |
-|-------|-----------------|
-| <1000 | Tizim hisobi    |
-| >1000 | Foydalanuvchi hisobi |
+| UID   | Type           |
+| ----- | -------------- |
+| <1000 | system account |
+| >1000 | user account   |
 
-**Foydalanuvchi ma’lumotlar bazasi**
+**User Database**
 
-Foydalanuvchi ma’lumotlari parolsiz `/etc/passwd` da saqlanadi.
+User info without passwords is stored in `/etc/passwd`.
 
-| foydalanuvchi | PW  | UID  | GID  | GECOS     | HOME        | SHELL     |
-|---------------|-----|------|------|-----------|-------------|-----------|
-| hfict         | x   | 1000 | 1000 |           | /home/hfict | /bin/bash |
+| username | PW  | UID  | GID  |  GECOS    | HOME        | SHELL     |
+| -------- | --- | ---- | ---- | --------- | ----------- | --------- |
+| hfict    | x   | 1000 | 1000 |           | /home/hfict | /bin/bash |
 
-**Guruh ma’lumotlar bazasi**
+**Group Database**
 
-Ikkinchi darajali guruh a’zolari `/etc/group` da saqlanadi. Asosiy guruh a’zolari foydalanuvchi bazasidagi GID orqali aniqlanadi.
+Group info with secondary group members are stored in `/etc/group`.
+Primary group members are identified by GID in user database.
 
-| guruhnomi | PW  | GID | Foydalanuvchilar |
-|-----------|-----|-----|------------------|
-| wheel     | x   | 10  | hfict,user2      |
+| groupname | PW  | GID | Users       |
+| --------- | --- | --- | ----------- |
+| wheel     | x   | 10  | hfict,user2 |
 
-**Parol ma’lumotlar bazasi**
+**Password Database**
 
-Hashlangan foydalanuvchi parollari `/etc/shadow` da saqlanadi. Parol shifrlash `/etc/login.defs` da sozlanadi.
+Hashed user passwords are stored in `/etc/shadow`.
+Password encryption is configured in `/etc/login.defs`.
 
-| foydalanuvchi | PW     | Oxirgi parol o‘zgartirish | Minimum | Maximum | Ogohlantirish | Faol emas | Tugash |
-|---------------|--------|---------------------------|---------|---------|---------------|-----------|--------|
-| hfict         | [hash] | 17803                     | 0       | 99999   | 7             |           |        |
+| username | PW     | Last PW change | Minimum | Maximum | Warn | Inactive | Expire |
+| -------- | ------ | -------------- | ------- | ------- | ---- | -------- | ------ |
+| hfict    | [hash] | 17803          | 0       | 99999   | 7    |          |        |
 
-Parol:
+PW:
 
-- `[hash]` Shifrlangan test paroli
-- `! [hash]` Hisob qulflangan
-- `!!` yoki `*` Hisob qulflangan, parol o‘rnatilmagan
+- `[hash]` Encrypted test password
+- `! [hash]` Account locked
+- `!!` or `*` Account locked, no password set
 
-**Buyruqlar**
+**Commands**
 
-| Buyruq    | Options                                    | Tavsif                                    |
-|-----------|--------------------------------------------|-------------------------------------------|
-| `id`      | `foydalanuvchi`                           | Foydalanuvchi ID va guruhlarini ko‘rsatish |
-| [`who`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/017-the-who-command.md)      |                                            | Tizimga kirgan foydalanuvchilarni ko‘rsatish |
-| [`last`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/048-the-last-command.md)     |                                            | Oxirgi kirishlarni ko‘rsatish             |
-| `lastb`   |                                            | Oxirgi muvaffaqiyatsiz kirishlarni ko‘rsatish |
-| [`sudo`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/051-the-sudo-command.md)     | `-u foydalanuvchi buyruq`                 | Buyruqni foydalanuvchi huquqlari bilan bajarish (standart root) |
-|           | `-i` yoki `su -`                          | Root huquqlari bilan shell                |
-| [`su`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/044-the-su-command.md)       |                                            | Root sifatida shell (kirish shellsiz)     |
-|           | `-`                                       | Root sifatida shell (kirish shell)        |
-|           | `- foydalanuvchi`                         | Foydalanuvchi sifatida shell              |
-| [`useradd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/080-the-useradd-command.md)  | `-u 2101 -g asosiyguruh -c izoh foydalanuvchi` | Foydalanuvchi yaratish ( `-g` siz yangi guruh yaratiladi) |
-| [`usermod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/082-the-usermod-command.md)  | `-G guruh1,guruh2`                        | Ikkinchi darajali guruhlarni belgilash (qayta yozish) |
-|           | `-ag guruh,guruh2`                        | Ikkinchi darajali guruhlarni qo‘shish     |
-|           | `-l foydalanuvchi`                        | Foydalanuvchi nomini o‘zgartirish         |
-|           | `-L`                                      | Hisobni qulflash                          |
-|           | `-U`                                      | Hisobni qulfdan chiqarish                 |
-|           | `-s shell_yo‘li`                          | Shellni o‘zgartirish                      |
-| [`userdel`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/081-the-userdel-command.md)  | `-r foydalanuvchi`                        | Foydalanuvchini uy va pochta fayllari bilan o‘chirish |
-| [`passwd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/025-the-passwd-command.md)   | `foydalanuvchi`                           | Parolni o‘zgartirish (interaktiv)         |
-| `groupadd` | `guruhnomi`                               | Guruh yaratish (`-g` bilan GID o‘rnatish mumkin) |
-| `groupdel` | `guruhnomi`                               | Guruhni o‘chirish                         |
+| Command    | Param 					      | Description 					        |
+| ---------- | ---------------------------------------------- | ------------------------------------------------------- |
+| `id` 	     | `username` 				      | Show a user's ID and groups 				|
+| [`who`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/017-the-who-command.md)      | 						      | Show logged in users 					|
+| [`last`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/048-the-last-command.md)     | 						      | Show last logins 					|
+| `lastb`    | 						      | Show last failed logins 				|
+| [`sudo`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/051-the-sudo-command.md)     | `-u user command` 			      | Execute command with user rights (default is root) 	|
+|            | `-i` or` su -` 				      | Shell with root rights 					|
+| [`su`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/044-the-su-command.md)       | 						      | Shell as root (non-login shell) 			|
+|            | `-` 					      | Shell as root (login shell) 				|
+| 	     | `- user` 				      | Shell as user 						|
+| [`useradd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/080-the-useradd-command.md)  | `-u 2101 -g primarygroup -c comment username`  | Create user (without `-g`, new group will be created)   |
+| [`usermod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/082-the-usermod-command.md)  | `-G group1, group2` 			      | Define (overwrite) secondary groups 			|
+| 	     | `-ag group, group2` 			      | Add secondary groups 					|
+|            | `-l username` 				      | Change username 					|
+| 	     | `-L` 					      | Lock Account 						|
+| 	     | `-U` 					      | Unlock Account 						|
+| 	     | `-s shellpath`  				      | Change shell 						|
+| [`userdel`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/081-the-userdel-command.md)  | `-r username` 				      | Delete user including home and mail spool 		|
+| [`passwd`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/025-the-passwd-command.md)   | `username` 				      | Change password (interactive) 				|
+| `groupadd` | `groupname` 				      | Create group (optionally set GID with `-g`) 		|
+| `groupdel` | `groupname` 			              | Delete group 						|
 
-# Fayl Tizimi Ruxsatnomalari
+# File System Permissions
 
-Ruxsatnomalar quyidagilarga o‘rnatiladi:
+Permissions can be set on:
 
-- Foydalanuvchi (egasi)
-- Guruh (egasi)
-- Boshqalar
+- User (owner)
+- Group (owner)
+- Others
 
-Faqat root *Foydalanuvchi* ni o‘zgartira oladi. *Foydalanuvchi* *Guruh* ni o‘zgartira oladi.
+Only root can change *User*. *User* can change *Group*.
 
-Asosiy ruxsatnomalar (birlashtirish uchun ikkilik bayroqlarni qo‘shing):
+Basic permissions (Add binary flags to combine):
 
-| Belgi | Ikkilik Bayroq | Ruxsatnoma |
-|-------|----------------|------------|
-| r     | 4              | o‘qish     |
-| w     | 2              | yozish     |
-| x     | 1              | bajarish   |
+| Char | Binary Flag | Permission |
+| ---- | ----------- | ---------- |
+| r    | 4           | read       |
+| w    | 2           | write      |
+| x    | 1           | execute    |
 
-Kengaytirilgan ruxsatnomalar (asosiy ruxsatnomalar oldiga qo‘yiladi: `chmod 1777 shared`):
+Advanced permissions (place in front of basic permissions: `chmod 1777 shared`).:
 
-| Belgi | Ikkilik Bayroq | Nomi       | Tavsif                                                                |
-|-------|----------------|------------|-----------------------------------------------------------------------|
-| t / T | 1              | Sticky Bit | *Boshqalar* tarkibni o‘chira olmaydi (faqat papkalar uchun)           |
-| s / S | 2              | SGID-Bit   | Fayl: *Guruh* huquqlari bilan ishlaydi<br>Papka: Yangi elementlar *Guruh* ni meros qilib oladi |
-| s / S | 4              | SUID-Bit   | Fayl *Foydalanuvchi* huquqlari bilan ishlaydi (faqat fayllar uchun)   |
+| Char  | Binary Flag | Name       | Description                                                                |
+| ----- | ----------- | ---------- | -------------------------------------------------------------------------- |
+| t / T | 1           | Sticky Bit | *Others* can't delete content (only applicable for directories)            |
+| s / S | 2           | SGID-Bit   | File: run with permissions of *Group*<br>Dir: New elements inherit *Group* |
+| s / S | 4           | SUID-Bit   | File is run with permissions of *User* (only applicable for files)         |
 
-Kengaytirilgan ruxsatnomalar `ls -l` da **x** ni almashtiradi. Agar **x** o‘rnatilgan bo‘lsa kichik harf, aks holda katta harf.
+Advanced permissions replace the **x** when using `ls -l`. Lower case if **x** is set, upper case if **x** is not set.
 
-*O‘qish* ruxsatnomasi papkani ko‘rishga imkon beradi, lekin tarkibini emas. Tarkibni ko‘rish uchun *bajarish* ruxsatnomasi kerak.
+*Read* permission on a directory only allows to see the directory itself but not it's contents. Use *execute* permission to show contents.
 
-**Buyruqlar**
+**Commands**
 
-| Buyruq   | Options                    | Tavsif                                      |
-|----------|----------------------------|---------------------------------------------|
-| [`chmod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/106-the-chmod-command.md)   | `-R [uog] papkanomi`      | Ruxsatnomalarni rekursiv ravishda o‘rnatish |
-|          | `+[suog] faylnomi`        | Ikkilik bayroqlar yordamida ruxsat qo‘shish |
-|          | `-[suog] faylnomi`        | Ikkilik bayroqlar yordamida ruxsatni olib tashlash |
-|          | `u+x faylnomi`            | *Foydalanuvchi* uchun *bajarish* ruxsatini qo‘shish |
-|          | `g+wx faylnomi`           | *Guruh* uchun *yozish* va *bajarish* ruxsatlarini qo‘shish |
-|          | `o-r faylnomi`            | *Boshqalar* uchun *o‘qish* ruxsatini olib tashlash |
-| [`chown`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/101-the-chown-command.md)   | `-R foydalanuvchi:guruh faylnomi` | Egani (*Foydalanuvchi* va *Guruh*) rekursiv ravishda o‘zgartirish |
-|          | `foydalanuvchi faylnomi`  | Egani (*Foydalanuvchi*) o‘zgartirish        |
-|          | `:guruh faylnomi`         | Egani (*Guruh*) o‘zgartirish                |
-| `chgroup`| `guruh faylnomi`          | Egani (*Guruh*) o‘zgartirish                |
+| Command   | Options                    | Description                                      |
+| --------- | ------------------------ | ------------------------------------------------- |
+| [`chmod`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/106-the-chmod-command.md)   | `-R [uog] dirname`       | Set permissions recursively using binary flags    |
+|           | `+[suog] filename`       | Add permissions using binary flags                |
+|           | `-[suog] filename`       | Remove permissions using binary flags             |
+|           | `u+x filename`           | Add *execute* permission for *User*               |
+|           | `g+wx filename`          | Add *write* and *execute* permissions for *Group* |
+|           | `o-r filename`           | Remove *read* permission for *Others*             |
+| [`chown`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/101-the-chown-command.md)   | `-R user:group filename` | Change owner (*User* & *Group*) recursively       |
+|           | `user filename`          | Change owner (*User*)                             |
+|           | `:group filename`        | Change owner (*Group*)                            |
+| `chgroup` | `group filename`         | Change owner (*Group*)                            |
 
 # SSH
 
 [`SSH`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/089-the-ssh-command.md)
-Sozlamalar `/etc/ssh/sshd_config` da amalga oshiriladi.
+Configuration is done in `/etc/ssh/sshd_config`.
 
-O‘zgarishlarni qo‘llash uchun SSH xizmatini qayta yuklang: `systemctl reload sshd`!
+Reload SSH service with `systemctl reload sshd` to apply changes!
 
-DenyUsers, AllowUsers, DenyGroups, AllowGroups bir-birini qayta yozadi va yuqoridagi tartibda qo‘llaniladi.
+DenyUsers, AllowUsers, DenyGroups, AllowGroups override each other and are applied in the order listed above.
 
-| Sozlama           | Options            | Tavsif                                   |
-|-------------------|--------------------|------------------------------------------|
-| `PermitRootLogin` | `no`               | Root uchun SSH orqali kirishni taqiqlash |
-|                   | `yes`              | Root uchun SSH orqali kirishga ruxsat    |
-|                   | `without-password` | Faqat shaxsiy/ommaviy kalit autentifikatsiyasi bilan ruxsat |
-| `AllowUsers`      | `foydalanuvchi1 foydalanuvchi2` | Faqat foydalanuvchi1 va foydalanuvchi2 ga ruxsat |
-| `DenyUsers`       | `foydalanuvchi1 foydalanuvchi2` | Hammaga ruxsat, faqat foydalanuvchi1 va foydalanuvchi2 dan tashqari |
-| `AllowGroups`     | `guruh1 guruh2`    | Faqat belgilangan guruhlardagi foydalanuvchilarga ruxsat |
-| `DenyGroups`      | `guruh1 guruh2`    | Hammaga ruxsat, faqat belgilangan guruhlardagi foydalanuvchilardan tashqari |
+| Config            | Option             | Description                                   |
+| ----------------- | ------------------ | --------------------------------------------- |
+| `PermitRootLogin` | `no`               | Deny root to login via SSH                    |
+|                   | `yes`              | Allow root to login via SSH                   |
+|                   | `without-password` | Allow only with private/public key auth       |
+| `AllowUsers`      | `user1 user2`      | Allow only user1 and user2                    |
+| `DenyUsers`       | `user1 user2`      | Allow all users but user1 and user2           |
+| `AllowGroups`     | `group1 group2`    | Allow only users from specified groups        |
+| `DenyGroups`      | `group1 group2`    | Allow all users but those in specified groups |
 
 # Cronjobs
 
 **[`Crontab`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/091-the-crontab-command.md)**
 
-Cronjoblar crontab fayllarida sozlanadi. Ushbu fayllarni to‘g‘ridan-to‘g‘ri tahrirlamang. Buning o‘rniga `crontab -e` dan foydalaning. Bu saqlangandan so‘ng cronjobni faollashtirish uchun barcha kerakli amallarni bajaradi. Joylashuvlar quyidagicha:
+Cronjobs are configured in crontab files. Do not edit these files directly. Use `crontab -e` instead. This runs all required actions to activate a cronjob after saving the edited crontab. The locations are as follows:
 
-- `/var/spool/cron/foydalanuvchi` foydalanuvchiga xos
-- `/etc/crontab` tizim bo‘yicha crontab
+- `/var/spool/cron/username` user specific
+- `/etc/crontab` system wide crontab
 
-Fayllar formati (foydalanuvchiga xos crontablarda *foydalanuvchi-nomi* ustuni bo‘lmaydi):
+The format of the files is (user specific crontabs **do not** have the column *user-name*):
 
+```
+Example of job definition:
+.---------------- minute (0 - 59 | */5 [every 5 minutes])
+|  .------------- hour (0 - 23)
+|  |  .---------- day of month (1 - 31)
+|  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+|  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+|  |  |  |  |
+*  *  *  *  * user-name  command to be executed
+```
 
+| Command                          | Description                   |
+| -------------------------------- | ----------------------------- |
+| `rpm -q cronie`                  | Check if package is installed |
+| `systemctl status crond.service` | Check if service is running   |
+| `crontab -l`                     | List current users crontab    |
+| `crontab -e`                     | Edit current users crontab    |
+| `crontab -e -u username`         | Edit specific users crontab   |
+| `crontab -r`                     | Remove current users crontab  |
 
+**Script folders**
 
-| Buyruq                          | Tavsif                          |
-|---------------------------------|---------------------------------|
-| `rpm -q cronie`                 | Paket o‘rnatilganligini tekshirish |
-| `systemctl status crond.service` | Xizmat ishlayotganligini tekshirish |
-| `crontab -l`                    | Joriy foydalanuvchi crontabini ro‘yxatlash |
-| `crontab -e`                    | Joriy foydalanuvchi crontabini tahrirlash |
-| `crontab -e -u foydalanuvchi`   | Belgilangan foydalanuvchi crontabini tahrirlash |
-| `crontab -r`                    | Joriy foydalanuvchi crontabini o‘chirish |
-
-**Skript papkalari**
-
-Quyidagi papkalardagi skriptlar papka nomida ko‘rsatilgan vaqt oralig‘ida ishga tushiriladi:
+Scripts in one of the following directories will be executed at the interval specified by the directory's name:
 
 - `/etc/cron.hourly`
 - `/etc/cron.daily`
 - `/etc/cron.weekly`
 - `/etc/cron.monthly`
 
-**Ruxsat berish / Taqiqlash**
+**Allow / Deny usage**
 
-Foydalanuvchi nomlarini quyidagi fayllarga bir qatordan qo‘shing:
+Add user names one per line to the following files:
 
-- `/etc/cron.allow` Oq ro‘yxat
-- `/etc/cron.deny` Qora ro‘yxat
+- `/etc/cron.allow` Whitelist
+- `/etc/cron.deny` Blacklist
 
-Agar hech qanday fayl mavjud bo‘lmasa, barcha foydalanuvchilarga ruxsat beriladi.
+If none of the files exists, all users are allowed.
 
-**Loglar va Natijalar**
+**Logs and Results**
 
-Cronjoblarning bajarilishi `/var/log/cron` da qayd etiladi.
-Natijalar foydalanuvchi pochtasiga `/var/spool/mail/foydalanuvchi` ga yuboriladi.
+Execution of cronjobs is logged in `/var/log/cron`.
+Results are sent to the users mail `/var/spool/mail/username`.
 
-# Paket Boshqaruvi
+# Package Management
 
 ## RPM
 
 [`RPM`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/075-the-rpm-command.md)
 
-| Buyruq                  | Tavsif                               |
-|------------------------|--------------------------------------|
-| `rpm -i rpmfayl\|rpmurl` | Paketni o‘rnatish                   |
-| `rpm -e paketnomi`     | Paketni o‘chirish                   |
-| `rpm -q paketnomi`     | Paket o‘rnatilganligini tekshirish  |
-| `rpm -ql paketnomi`    | Paketdagi fayllarni ro‘yxatlash     |
-| `rpm -qa`              | Barcha o‘rnatilgan paketlarni ro‘yxatlash |
-| `rpm -qf /fayl_yo‘li`  | Faylni o‘rnatgan paketni aniqlash   |
-| `rpm -qf $(which <exe>)` | Ijro faylini o‘rnatgan paketni aniqlash |
-| `rpm -V paketnomi`     | O‘rnatilgan paketni tekshirish      |
+| Command                  | Description                               |
+| ------------------------ | ----------------------------------------- |
+| `rpm -i rpmfile\|rpmurl`  | Install package                           |
+| `rpm -e packagename`     | Uninstall package                         |
+| `rpm -q packagename`     | Check if package is installed             |
+| `rpm -ql packagename`    | List files in a package                   |
+| `rpm -qa`                | List all installed packages               |
+| `rpm -qf /path/to/file`  | Get package that installed the file       |
+| `rpm -qf $(which <exe>)` | Get package that installed the executable |
+| `rpm -V packagename`     | Validate installed package                |
 
 ## YUM
 
-[`YUM`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/053-the-yum-command.md) `/etc/yum.conf` da sozlanadi
+[`YUM`](https://github.com/bobbyiliev/101-linux-commands-ebook/blob/main/ebook/en/content/053-the-yum-command.md) is configured in `/etc/yum.conf`
 
-Repolar `/etc/yum.repos.d/` da sozlanadi
+Repos are configured in `/etc/yum.repos.d/`
 
-Log `/var/log/yum.log` da
+Log is in `/var/log/yum.log`
 
-| Buyruq                               | Tavsif                               |
-|-------------------------------------|--------------------------------------|
-| `yum install paketnomi [-y]`        | Paketni o‘rnatish (`-y` tasdiqlamasdan) |
-| `yum remove paketnomi`              | Paketni o‘chirish                   |
-| `yum update`                        | Barcha o‘rnatilgan paketlarni yangilash |
-| `yum update paketnomi`              | Maxsus paketni yangilash            |
-| `yum update naqsh*`                 | Joker belgi yordamida paketlarni yangilash |
-| `yum info paketnomi`                | Paket haqida batafsil ma’lumot      |
-| `yum list paketnomi`                | O‘rnatilgan va mavjud paketlarni ro‘yxatlash |
-| `yum search qidiruv_so‘zi`          | Paketni qidirish (nomi va xulosa bo‘yicha) |
-| `yum search all qidiruv_so‘zi`      | Paketni qidirish (barcha ma’lumotlar bo‘yicha) |
-| `yum deplist paketnomi`             | Paket qaramliklarini ro‘yxatlash    |
-| `yum reinstall paketnomi`           | Paketni qayta o‘rnatish (buzilgan bo‘lsa) |
-| `yumdownloader --resolve paketnomi` | RPM paketini qaramliklari bilan yuklab olish |
-
----
-
-# 📃 Kategoriyalar bo‘yicha buyruqlar ro‘yxati:
-
-Agar hissa qo‘shmoqchi bo‘lsangiz, `TODO` deb belgilangan mavzuni tanlab, pull request yuboring 🙌
-
-Agar ro‘yxatda yoqtirgan mavzungiz bo‘lmasa, yangi mavzu qo‘shishingiz mumkin.
+| Command                               | Description                               |
+| ------------------------------------- | ----------------------------------------- |
+| `yum install packagename [-y]`        | Install package (`-y` no confirm message) |
+| `yum remove packagename`              | Uninstall package                         |
+| `yum update`                          | Update all installed packages             |
+| `yum update packagename`              | Update specific package                   |
+| `yum update pattern*`                 | Update packages using wildcard            |
+| `yum info packagename`                | Get detailed info about package           |
+| `yum list packagename`                | List installed and available packages     |
+| `yum search searchstring`             | search for a package (name & summary)     |
+| `yum search all searchstring`         | search for a package (all infos)          |
+| `yum deplist packagename`             | List dependencies of a package            |
+| `yum reinstall packagename`           | Reinstall (corrupted) package             |
+| `yumdownloader --resolve packagename` | Download rpm package with dependencies    |
 
 ---
 
-### Papkalar bo‘yicha navigatsiya
+# 📃 List of commands by category:
 
-- [cd](ebook/en/content/002-the-cd-command.md) - joriy papkani o‘zgartirish
-- [ls](ebook/en/content/001-the-ls-command.md) - papka tarkibini ro‘yxatlash
-- [dir](ebook/en/content/057-the-dir-command.md) - papka ro‘yxatini ustunli formatda ko‘rsatish
-- [pwd](ebook/en/content/006-the-pwd-command.md) - joriy papka nomini ko‘rsatish
-- [tree](ebook/en/content/095-the-tree-command.md) - pastki papkalarni daraxt shaklida ro‘yxatlash
+If you want to contribute, feel free to pick up a topic marked as `TODO` and submit a pull request 🙌
 
-### Fayl buyruqlari
-
-- [cat/tac](ebook/en/content/003-the-cat-tac-command.md) - fayllarni birlashtirish va chop etish
-- [diff/sdiff](ebook/en/content/062-the-diff-sdiff-command.md) - fayllarni qator bo‘yicha taqqoslash
-- [find](ebook/en/content/102-the-find-command.md) - fayllarni qidirish
-- [grep](ebook/en/content/107-the-grep-command.md) - fayl naqshlarini qidiruvchi
-- [head](ebook/en/content/004-the-head-command.md) - faylning dastlabki qatorlarini ko‘rsatish
-- [locate](ebook/en/content/049-the-locate-command.md) - fayl va papkalarni topish
-- [stat](ebook/en/content/079-the-stat-command.md) - fayl holatini ko‘rsatish
-- [tail](ebook/en/content/005-the-tail-command.md) - faylning oxirgi qatorlarini ko‘rsatish
-- [uniq](ebook/en/content/074-the-uniq-command.md) - takrorlanadigan qatorlarni filtrlash yoki hisobot qilish
-
-### Fayl va Papka Manipulyatsiyasi
-
-- [awk](ebook/en/content/090-the-awk-command.md) - naqshga yo‘naltirilgan skanlash va qayta ishlash tili
-- [chmod](ebook/en/content/106-the-chmod-command.md) - ruxsatnomalarni o‘zgartirish
-- [chown](ebook/en/content/101-the-chown-command.md) - fayl egasi va guruhini o‘zgartirish
-- [cp](ebook/en/content/031-the-cp-command.md) - fayl va papkalarni nusxalash
-- [cut](ebook/en/content/098-the-cut-command.md) - fayllardan qismlarni olib tashlash
-- [mkdir](ebook/en/content/014-the-mkdir-command.md) - yangi papka yaratish
-- [mv](ebook/en/content/032-the-mv-command.md) - fayl va papkalarni ko‘chirish
-- [nano](ebook/en/content/039-the-nano-command.md) - matn muharriri
-- [rm](ebook/en/content/040-the-rm-command.md) - fayl va papkalarni o‘chirish
-- [rmdir](ebook/en/content/103-the-rmdir-command.md) - papkani o‘chirish
-- [paste](ebook/en/content/060-the-paste-command.md) - fayl qatorlarini birlashtirish
-- [rsync](ebook/en/content/086-the-rsync-command.md) - masofadan nusxalash
-- [scp](ebook/en/content/076-the-scp-command.md) - xavfsiz nusxalash
-- [basename](ebook/en/content/111-the-basename-command.md) - fayl yo‘lidan papka ma’lumotlari va qo‘shimchalarni olib tashlash
-- [sed](ebook/en/content/099-the-sed-command.md) - matn o‘zgartirish vositasi
-- [sort](ebook/en/content/059-the-sort-command.md) - fayl qatorlarini tartiblash yoki birlashtirish
-- [split](ebook/en/content/078-the-split-command.md) - faylni bo‘laklarga bo‘lish
-- [touch](ebook/en/content/007-the-touch-command.md) - faylga kirish va o‘zgartirish vaqtlarini o‘zgartirish
-- [vim](ebook/en/content/100-the-vim-command.md) - matn muharriri
-
-### Paket arxivlash va siqish vositalari
-
-- [bzip2](ebook/en/content/069-the-bzip2-command.md) - blok saralash fayl siqish vositasi
-- [gzip](ebook/en/content/015-the-gzip-command.md) - siqish vositasi
-- [gunzip](ebook/en/content/064-the-gunzip-command.md) - dekompressiya vositasi
-- [tar](ebook/en/content/063-the-tar-command.md) - arxivlarni yaratish, ochish va manipulyatsiya qilish
-- [zip](ebook/en/content/054-the-zip-command.md) - fayllarni paketlash va siqish
-- [unzip](ebook/en/content/055-the-unzip-command.md) - ZIP fayllarni ro‘yxatlash, sinash, ochish
-
-### Tizim buyruqlari
-
-- [crontab](ebook/en/content/091-the-crontab-command.md) - cron daemonini boshqarish uchun individual jadvallarni saqlash
-- [df](ebook/en/content/010-the-df-command.md) - bo‘sh disk joyini ko‘rsatish
-- [du](ebook/en/content/084-the-du-command.md) - disk foydalanish statistikasini ko‘rsatish
-- [free](ebook/en/content/018-the-free-command.md) - xotira foydalanish ma’lumotlarini ko‘rsatish
-- [hostname](ebook/en/content/038-the-hostname-command.md) - joriy xost tizim nomini o‘rnatish yoki ko‘rsatish
-- [hostnamectl](ebook/en/content/065-the-hostnamectl-command.md) - xostnomi sozlamalarini o‘zgartirish
-- [ionice](ebook/en/content/083-the-ionice-command.md) - I/O jarayon ustuvorligini olish/o‘rnatish
-- [iostat](ebook/en/content/050-the-iostat-command.md) - I/O statistikasi
-- [kill](ebook/en/content/034-the-kill-command.md) - jarayonni ID bo‘yicha to‘xtatish yoki signal yuborish
-- [killall](ebook/en/content/035-the-killall-command.md) - jarayonlarni nomi bo‘yicha to‘xtatish
-- [lsblk](ebook/en/content/104-the-lsblk-command.md) - blok va tsikl qurilmalarini ko‘rsatish
-- [lsof](ebook/en/content/068-the-lsof-command.md) - ochiq fayllarni ro‘yxatlash
-- [mpstat](ebook/en/content/072-the-mpstat-command.md) - CPU statistikasi
-- [ncdu](ebook/en/content/073-the-ncdu-command.md) - curses asosidagi disk foydalanish
-- [ps](ebook/en/content/033-the-ps-command.md) - jarayon holatini ko‘rsatish
-- [pstree](ebook/en/content/094-the-pstree-command.md) - jarayonlarni daraxt formatida ko‘rsatish
-- [reboot](ebook/en/content/058-the-reboot-command.md) - tizimni qayta yuklash
-- [service](ebook/en/content/070-the-service-command.md) - boshlang‘ich skriptni ishga tushirish
-- [shutdown](ebook/en/content/056-the-shutdown-command.md) - tizimni belgilangan vaqtda yopish
-- [top/htop](ebook/en/content/019-the-top-htop-command.md) - jarayon ma’lumotlarini ko‘rsatish
-- [uname](ebook/en/content/013-the-uname-command.md) - operatsion tizim tafsilotlarini chop etish
-- [useradd](ebook/en/content/080-the-useradd-command.md) - foydalanuvchi hisoblarini qo‘shish/yangilash
-- [userdel](ebook/en/content/081-the-userdel-command.md) - foydalanuvchi hisobini o‘chirish
-- [usermod](ebook/en/content/082-the-usermod-command.md) - foydalanuvchi xususiyatlarini o‘zgartirish
-- [vmstat](ebook/en/content/071-the-vmstat-command.md) - virtual xotira statistikasi
-- [whereis](ebook/en/content/096-the-whereis-command.md) - dasturlarni topish
-
-### Tarmoq buyruqlari
-
-- [dig](ebook/en/content/087-the-dig-command.md) - DNS qidiruv vositasi
-- [ifconfig](ebook/en/content/041-the-ifconfig-command.md) - tarmoq interfeysi parametrlarini sozlash
-- [ip](ebook/en/content/042-the-ip-command.md) - tarmoq boshqaruv vazifalarini bajarish
-- [iptable](ebook/en/content/066-the-iptable-command.md) - IPv4 tarmoq devorini sozlash
-- [lscpu](ebook/en/content/030-the-lscpu-command.md) - CPU arxitekturasi ma’lumotlarini ko‘rsatish
-- [netstat](ebook/en/content/067-the-netstat-command.md) - tarmoq holatini ko‘rsatish
-- [ping](ebook/en/content/085-the-ping-command.md) - tarmoq ulanishini tekshirish
-- [whois](ebook/en/content/088-the-whois-command.md) - internet domen nomlari va tarmoq raqamlari haqida ma’lumot
-
-### Paket boshqaruvi
-
-- [apt](ebook/en/content/052-the-apt-command.md) - Debian paket boshqaruvi
-- [rpm](ebook/en/content/075-the-rpm-command.md) - RPM paket boshqaruvchisi (RedHat)
-- [yum](ebook/en/content/053-the-yum-command.md) - RedHat Linux uchun paket boshqaruvchisi
-
-### Foydalanuvchi ma’lumotlari buyruqlari
-Foydalanuvchi o‘zgartirish uchun tizim buyruqlari ostidagi useradd, userdel, usermod ga qarang
-
-- [groups](ebook/en/content/023-the-groups-command.md) - guruh a’zoliklarini ko‘rsatish
-- [finger](ebook/en/content/022-the-finger-command.md) - foydalanuvchilar haqida ma’lumot ko‘rsatish
-- [last](ebook/en/content/048-the-last-command.md) - eng so‘nggi foydalanuvchi kirishlarini ko‘rsatish
-- [passwd](ebook/en/content/025-the-passwd-command.md) - foydalanuvchi parolini o‘zgartirish
-- [w](ebook/en/content/026-the-w-command.md) - kim tizimga kirgan va nima qilayotganini ko‘rsatish
-- [who](ebook/en/content/017-the-who-command.md) - tizimga kirganlarni ko‘rsatish
-- [whoami](ebook/en/content/027-the-whoami-command.md) - joriy foydalanuvchi ID sini ko‘rsatish
-
-### Sessiya buyruqlari
-
-- [clear](ebook/en/content/043-the-clear-command.md) - terminal ekranini tozalash
-- [env](ebook/en/content/036-the-env-command.md) - muhit o‘zgaruvchilarini ko‘rsatish yoki buyruq uchun o‘zgaruvchilarni o‘rnatish
-- [exit](ebook/en/content/061-the-exit-command.md) - faol sessiya/shellni yopish
-- [printenv](ebook/en/content/037-the-printenv-command.md) - belgilangan muhit o‘zgaruvchilarini chop etish
-- [history](ebook/en/content/028-the-history-command.md) - buyruqlar tarixini ko‘rsatish
-- [login](ebook/en/content/029-the-login-command.md) - kirish va foydalanuvchi sessiyasini boshlash
-- [nohup](ebook/en/content/093-the-nohup-command.md) - uzilishlarga chidamli vositani ishga tushirish
-- [sleep](ebook/en/content/077-the-sleep-command.md) - bajarishni vaqt oralig‘ida to‘xtatish
-- [ssh](ebook/en/content/089-the-ssh-command.md) - xavfsiz shell kirish
-- [su](ebook/en/content/044-the-su-command.md) - foydalanuvchi identifikatorini almashtirish
-- [sudo](ebook/en/content/051-the-sudo-command.md) - buyruqni boshqa foydalanuvchi sifatida bajarish
-- [screen](ebook/en/content/108-the-screen-command.md) - ekran sessiyasini boshlash
-
-### Yordam olish
-
-- [man](ebook/en/content/024-the-man-command.md) - onlayn qo‘llanma sahifalarini formatlash va ko‘rsatish
-- [help](ebook/en/content/011-the-help-command.md) - ‘man’ qamrab olmaydigan asosiy buyruqlar haqida yordam ko‘rsatish
-- [whatis](ebook/en/content/016-the-whatis-command.md) - buyruqlarning bir qatorli tavsiflarini ko‘rsatish
-
-### Ilovalar
-
-- [bc](ebook/en/content/009-the-bc-command.md) - asosiy kalkulyator
-- [cal](ebook/en/content/008-the-cal-command.md) - kalendarni ko‘rsatish
-- [cmatrix](ebook/en/content/105-the-cmatrix-command.md) - Matrixga kirish
-- [curl](ebook/en/content/046-the-curl-command.md) - serverga yoki serverdan ma’lumot uzatish
-- [echo](ebook/en/content/021-the-echo-command.md) - talqin qilingan argumentlarni ko‘rsatish
-- [factor](ebook/en/content/012-the-factor-command.md) - raqamlarning tub omillarini chop etish
-- [printf](ebook/en/content/097-the-printf-command.md) - chiqishni formatlash
-- [sl](ebook/en/content/020-the-sl-command.md) - terminalda bug‘ lokomotivini ishga tushirish
-- [wget](ebook/en/content/045-the-wget-command.md) - interaktiv bo‘lmagan veb fayl yuklab olish
-- [xargs](ebook/en/content/092-the-xargs-command.md) - argumentlar ro‘yxatini yaratish va vositani ishga tushirish
-- [yes](ebook/en/content/047-the-yes-command.md) - doimiy chiqish oqimini chop etish
-- [banner](ebook/en/content/112-the-banner-command.md) - ASCII belgi satrlarini katta harflarda chop etish
-- [aplay](ebook/en/content/125-the-aplay-command.md) - audio fayllarni buyruq satridan ijro etish
-- [spd-say](ebook/en/content/126-the-spd-say-command.md) - berilgan matnni tovush sifatida ijro etish
+Feel free to add new topics in case that you don't find one that you like from the current list.
 
 ---
+### Directory Navigation
 
-# 📃 Boblar bo‘yicha buyruqlar ro‘yxati:
+- [cd](ebook/en/content/002-the-cd-command.md) - change working directory
+- [ls](ebook/en/content/001-the-ls-command.md) - list directory contents
+- [dir](ebook/en/content/057-the-dir-command.md) - directory listing, columnar format
+- [pwd](ebook/en/content/006-the-pwd-command.md) - return working directory name
+- [tree](ebook/en/content/095-the-tree-command.md) - list subdirectories in a tree structure
 
-Agar hissa qo‘shmoqchi bo‘lsangiz, mavzuni tanlab, `Yangi Misollar | [Opsiyalar]` bilan yangilab, pull request yuboring 🙌
 
-Agar ro‘yxatda yoqtirgan mavzungiz bo‘lmasa, yangi mavzu qo‘shishingiz mumkin.
+### File Commands
+
+- [cat/tac](ebook/en/content/003-the-cat-tac-command.md) - concatenate and print files
+- [diff/sdiff](ebook/en/content/062-the-diff-sdiff-command.md) - compare files line by line
+- [find](ebook/en/content/102-the-find-command.md) - search for files
+- [grep](ebook/en/content/107-the-grep-command.md) - file pattern matcher
+- [head](ebook/en/content/004-the-head-command.md) - display the first lines of a file
+- [locate](ebook/en/content/049-the-locate-command.md) - find files and directories
+- [stat](ebook/en/content/079-the-stat-command.md) - display file status
+- [tail](ebook/en/content/005-the-tail-command.md) - display the last lines of a file
+- [uniq](ebook/en/content/074-the-uniq-command.md) -  report or filter out repeated lines in a file
+
+### File and Directory Manipulation
+
+- [awk](ebook/en/content/090-the-awk-command.md) - pattern-directed scanning and processing language
+- [chmod](ebook/en/content/106-the-chmod-command.md) - change permissions
+- [chown](ebook/en/content/101-the-chown-command.md) - change file owner and group
+- [cp](ebook/en/content/031-the-cp-command.md) - copy files and directories
+- [cut](ebook/en/content/098-the-cut-command.md) - remove sections from files
+- [mkdir](ebook/en/content/014-the-mkdir-command.md) - make a new directory
+- [mv](ebook/en/content/032-the-mv-command.md) - move files and directories
+- [nano](ebook/en/content/039-the-nano-command.md) - text editor
+- [rm](ebook/en/content/040-the-rm-command.md) - delete files and directories
+- [rmdir](ebook/en/content/103-the-rmdir-command.md) - remove directory
+- [paste](ebook/en/content/060-the-paste-command.md) - merge corresponding or subsequent lines of file
+- [rsync](ebook/en/content/086-the-rsync-command.md) - remote copy files
+- [scp](ebook/en/content/076-the-scp-command.md) - secure copy
+- [basename](ebook/en/content/111-the-basename-command.md) - strips directory information and suffixes from file path
+- [sed](ebook/en/content/099-the-sed-command.md) - text transformation tool
+- [sort](ebook/en/content/059-the-sort-command.md) - arrange or merge lines of files
+- [split](ebook/en/content/078-the-split-command.md) - split a file into pieces
+- [touch](ebook/en/content/007-the-touch-command.md) - change file access and modification times
+- [vim](ebook/en/content/100-the-vim-command.md) - text editor
+
+### Package archive and compression tools
+
+- [bzip2](ebook/en/content/069-the-bzip2-command.md) - block-sorting file compressor
+- [gzip](ebook/en/content/015-the-gzip-command.md) - compression tool
+- [gunzip](ebook/en/content/064-the-gunzip-command.md) - decompression tool
+- [tar](ebook/en/content/063-the-tar-command.md) - create, extract and manipulate archives
+- [zip](ebook/en/content/054-the-zip-command.md) - package and compress files
+- [unzip](ebook/en/content/055-the-unzip-command.md) - list, test, extract compressed ZIP files
+
+### System commands
+
+- [crontab](ebook/en/content/091-the-crontab-command.md) - maintain individual tables used to drive the cron daemon
+- [df](ebook/en/content/010-the-df-command.md) - display free disk space
+- [du](ebook/en/content/084-the-du-command.md) - display disk usage statistics
+- [free](ebook/en/content/018-the-free-command.md) - show memory usage information
+- [hostname](ebook/en/content/038-the-hostname-command.md) - set or print name of current host system
+- [hostnamectl](ebook/en/content/065-the-hostnamectl-command.md) - change hostname settings
+- [ionice](ebook/en/content/083-the-ionice-command.md) - get/set I/O process priority
+- [iostat](ebook/en/content/050-the-iostat-command.md) - I/O statistics
+- [kill](ebook/en/content/034-the-kill-command.md) - terminate or signal a process by id
+- [killall](ebook/en/content/035-the-killall-command.md) - kill processes by name
+- [lsblk](ebook/en/content/104-the-lsblk-command.md) - display block and loop devices
+- [lsof](ebook/en/content/068-the-lsof-command.md) - list open files
+- [mpstat](ebook/en/content/072-the-mpstat-command.md) - CPU statistics
+- [ncdu](ebook/en/content/073-the-ncdu-command.md) - curses-based disk usage
+- [ps](ebook/en/content/033-the-ps-command.md) - display process status
+- [pstree](ebook/en/content/094-the-pstree-command.md) - show processes in tree format
+- [reboot](ebook/en/content/058-the-reboot-command.md) - restart the system
+- [service](ebook/en/content/070-the-service-command.md) - run an init script
+- [shutdown](ebook/en/content/056-the-shutdown-command.md) - close down the system at a specific time
+- [top/htop](ebook/en/content/019-the-top-htop-command.md) - display process information
+- [uname](ebook/en/content/013-the-uname-command.md) - prints operating system details
+- [useradd](ebook/en/content/080-the-useradd-command.md) - add/update user accounts
+- [userdel](ebook/en/content/081-the-userdel-command.md) - delete user account
+- [usermod](ebook/en/content/082-the-usermod-command.md) - modify user properties
+- [vmstat](ebook/en/content/071-the-vmstat-command.md) - virtual memory statistics
+- [whereis](ebook/en/content/096-the-whereis-command.md) - locate programs
+
+### Networking Commands
+
+- [dig](ebook/en/content/087-the-dig-command.md) - DNS lookup utility
+- [ifconfig](ebook/en/content/041-the-ifconfig-command.md) - configure network interface parameters
+- [ip](ebook/en/content/042-the-ip-command.md) - perform network administration tasks
+- [iptable](ebook/en/content/066-the-iptable-command.md) - configure IPv4 network firewall
+- [lscpu](ebook/en/content/030-the-lscpu-command.md) - display CPU architecture information
+- [netstat](ebook/en/content/067-the-netstat-command.md) - show network status
+- [ping](ebook/en/content/085-the-ping-command.md) - check network connectivity
+- [whois](ebook/en/content/088-the-whois-command.md) - information about Internet domain names and network numbers
+
+
+### Package Management
+
+- [apt](ebook/en/content/052-the-apt-command.md) - Debian package management
+- [rpm](ebook/en/content/075-the-rpm-command.md) - RPM package manager (RedHat)
+- [yum](ebook/en/content/053-the-yum-command.md) - package manager for RedHat Linux
+
+### User Information commands
+For user modification, see useradd, userdel, usermod under System commands
+
+- [groups](ebook/en/content/023-the-groups-command.md) - show group memberships
+- [finger](ebook/en/content/022-the-finger-command.md) - shows information about users
+- [last](ebook/en/content/048-the-last-command.md) - displays most recent user logins
+- [passwd](ebook/en/content/025-the-passwd-command.md) - modify a user's password
+- [w](ebook/en/content/026-the-w-command.md) - display who is logged in and what they are doing
+- [who](ebook/en/content/017-the-who-command.md) - display who is logged in
+- [whoami](ebook/en/content/027-the-whoami-command.md) - display effective user id
+
+### Session commands
+
+- [clear](ebook/en/content/043-the-clear-command.md) - clear terminal screen
+- [env](ebook/en/content/036-the-env-command.md) - display environment variables, or set variables for command execution
+- [exit](ebook/en/content/061-the-exit-command.md) - close the active session/shell
+- [printenv](ebook/en/content/037-the-printenv-command.md) - print specified environment variables
+- [history](ebook/en/content/028-the-history-command.md) - display the command history
+- [login](ebook/en/content/029-the-login-command.md) - login and initiate a user session
+- [nohup](ebook/en/content/093-the-nohup-command.md) - invoke a utility immune to hangups
+- [sleep](ebook/en/content/077-the-sleep-command.md) - suspend execution for a time interval
+- [ssh](ebook/en/content/089-the-ssh-command.md) - secure shell login
+- [su](ebook/en/content/044-the-su-command.md) - substitute user identity
+- [sudo](ebook/en/content/051-the-sudo-command.md) - execute a command as another user
+- [screen](ebook/en/content/108-the-screen-command.md) - start a screen session
+
+### Getting Help
+
+- [man](ebook/en/content/024-the-man-command.md) - format and display online manual pages
+- [help](ebook/en/content/011-the-help-command.md) - displays help about basic commands not covered by 'man'
+- [whatis](ebook/en/content/016-the-whatis-command.md) - display one-line command descriptions
+
+### Applications
+
+- [bc](ebook/en/content/009-the-bc-command.md) - basic calculator
+- [cal](ebook/en/content/008-the-cal-command.md) - displays a calendar
+- [cmatrix](ebook/en/content/105-the-cmatrix-command.md) - enter the Matrix
+- [curl](ebook/en/content/046-the-curl-command.md) - transfer data to or from a server
+- [echo](ebook/en/content/021-the-echo-command.md) - display interpreted arguments
+- [factor](ebook/en/content/012-the-factor-command.md) - prints prime factors of numbers
+- [printf](ebook/en/content/097-the-printf-command.md) - format output
+- [sl](ebook/en/content/020-the-sl-command.md) - runs a steam locomotive across your terminal
+- [wget](ebook/en/content/045-the-wget-command.md) - non-interactive web file download
+- [xargs](ebook/en/content/092-the-xargs-command.md) - construct argument lists and execute utility
+- [yes](ebook/en/content/047-the-yes-command.md) - print continous output stream
+- [banner](ebook/en/content/112-the-banner-command.md) - Writes ASCII character strings in large letters to standard output.
+- [aplay](ebook/en/content/125-the-aplay-command.md) - aplay is a command-line to play audio files.
+- [spd-say](ebook/en/content/126-the-spd-say-command.md) - plays the given text as the sound from the command line.
+
+---
+# 📃 List of commands by chapter:
+
+If you want to contribute, feel free to pick up a topic, update it with `New Examples | [Options]`and submit a pull request 🙌
+
+Feel free to add new topics in case that you don't find one that you like from the current list.
 
 - [001-the-ls-command.md](ebook/en/content/001-the-ls-command.md)
 - [002-the-cd-command.md](ebook/en/content/002-the-cd-command.md)
@@ -828,5 +838,45 @@ Agar ro‘yxatda yoqtirgan mavzungiz bo‘lmasa, yangi mavzu qo‘shishingiz mum
 - [110-the-make-command.md](ebook/en/content/110-the-make-command.md)
 - [111-the-basename-command.md](ebook/en/content/111-the-basename-command.md)
 - [112-the-banner-command.md](ebook/en/content/112-the-banner-command.md)
-- [113-the-alias-command.md]
+- [113-the-alias-command.md](ebook/en/content/113-the-alias-command.md)
+- [114-the-which-command.md](ebook/en/content/114-the-which-command.md)
+- [115-the-date-command.md](ebook/en/content/115-the-date-command.md)
+- [116-the-mount-command.md](ebook/en/content/116-the-mount-command.md)
+- [117-the-nice-command.md](ebook/en/content/117-the-nice-command.md)
+- [118-the-wc-command.md](ebook/en/content/118-the-wc-command.md)
+- [119-the-tr-command.md](ebook/en/content/119-the-tr-command.md)
+- [120-the-fdisk-command.md](ebook/en/content/120-the-fdisk-command.md)
+- [121-the-wait-command.md](ebook/en/content/121-the-wait-command.md)
+- [122-the-zcat-command.md](ebook/en/content/122-the-zcat-command.md)
+- [123-the-fold-command.md](ebook/en/content/123-the-fold-command.md)
+- [124-the-quota-command.md](ebook/en/content/124-the-quota-command.md)
+- [125-the-aplay-command.md](ebook/en/content/125-the-aplay-command.md)
+- [126-the-spd-say-command.md](ebook/en/content/126-the-spd-say-command.md)
+- [127-the-xeyes-command.md](ebook/en/content/127-the-xeyes-command.md)
+- [128-the-parted-command.md](ebook/en/content/128-the-parted-command.md)
+- [129-the-nl-command.md](ebook/en/content/129-the-nl-command.md)
+- [130-the-pidof-command.md](ebook/en/content/130-the-pidof-command.md)
+- [131-the-shuf-command.md](ebook/en/content/131-the-shuf-command.md)
+- [132-the-less-command.md](ebook/en/content/132-the-less-command.md)
+- [133-the-nslookup-command.md](ebook/en/content/133-the-nslookup-command.md)
+- [134-the-cmp-command.md](ebook/en/content/134-the-cmp-command.md)
+- [135-the-expr-command.md](ebook/en/content/135-the-expr-command.md)
 
+# 🔗Links
+
+- [Free $200 Credit For DigitalOcean](https://m.do.co/c/2a9bba940f39)
+- [Join DevDojo](https://devdojo.com?ref=bobbyiliev)
+- [Ibis](https://github.com/themsaid/ibis/)
+- [Canva](https://www.canva.com/join/determined-cork-learn)
+- [Tails](http://devdojo.com/tails)
+
+# 📖Other eBooks
+
+- [Introduction to SQL](https://github.com/bobbyiliev/introduction-to-sql)
+- [Introduction to Git and GitHub](https://github.com/bobbyiliev/introduction-to-git-and-github-ebook)
+- [Introduction to Bash Scripting](https://github.com/bobbyiliev/introduction-to-bash-scripting)
+- [Laravel tips and tricks](https://github.com/bobbyiliev/laravel-tips-and-tricks-ebook)
+
+# 🤲Contributing
+
+If you are contributing 🍿 please read the [contributing file](CONTRIBUTING.md) before submitting your pull requests.
